@@ -135,12 +135,10 @@
         <?php include "main-menu.php"; ?>
 
         <?php 
-        if ($this->uri->segment(1)=='' OR $this->uri->segment(1)=='utama'){ 
-            include "slide.php"; 
+        if ($this->uri->segment('1')!='' AND $this->uri->segment('1')!='utama'){
+            // include "slide.php"; 
         ?>
-        
-        <?php } else { ?>
-                <div id="pagetitle" style="background-image:url('plugin/wp-content/uploads/2019/03/shutterstock_682632427.jpg');" class="page-title page-title-layout2 overlay-gradient absolute-header">
+        <div id="pagetitle" style="background-image:url('plugin/wp-content/uploads/2019/03/shutterstock_682632427.jpg');" class="page-title page-title-layout2 overlay-gradient absolute-header">
                 <div class="container">
                     <div class="page-title-inner">
                         <ul class="cms-breadcrumb">
@@ -151,6 +149,7 @@
                     </div>
                 </div>
             </div>
+        
         <?php } ?>
 
         <div id="content" class="site-content">
@@ -166,7 +165,7 @@
                                             <div class="wpb_column vc_column_container vc_col-sm-12">
                                                 <div class="vc_column-inner">
                                                     <div class="wpb_wrapper">
-                                                        <!-- disini -->
+                                                        
                                                         <?php 
                                                             if ($this->uri->segment(1)=='' OR $this->uri->segment(1)=='utama'){
                                                             include "slide.php"; 
