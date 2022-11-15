@@ -1,0 +1,55 @@
+body .primary-menu>li>a,
+              body .primary-menu .sub-menu li a {
+                  font-display: swap;
+              }
+
+              footer.site-footer .top-footer .footer-widget-title {
+                  font-display: swap;
+              }
+
+              a {
+                  color: inherit;
+              }
+
+              a:hover {
+                  color: #ff5e14;
+              }
+
+              a:active {
+                  color: #ff5e14;
+              }
+
+              body {
+                  font-display: swap;
+              }
+
+              h1,
+              .h1,
+              .text-heading {
+                  font-display: swap;
+              }
+
+              h2,
+              .h2 {
+                  font-display: swap;
+              }
+
+              h3,
+              .h3 {
+                  font-display: swap;
+              }
+
+              h4,
+              .h4 {
+                  font-display: swap;
+              }
+
+              h5,
+              .h5 {
+                  font-display: swap;
+              }
+
+              h6,
+              .h6 {
+                  font-display: swap;
+              }
