@@ -132,10 +132,13 @@
         </div>
         
         
+        <?php include "main-menu.php"; ?>
 
         <?php 
-        if ($this->uri->segment(1)=='' OR $this->uri->segment(1)=='utama'){ ?>
-        <?php include "main-menu.php"; ?>
+        if ($this->uri->segment(1)=='' OR $this->uri->segment(1)=='utama'){ 
+            include "slide.php"; 
+        ?>
+        
         <?php } else { ?>
                 <div id="pagetitle" style="background-image:url('plugin/wp-content/uploads/2019/03/shutterstock_682632427.jpg');" class="page-title page-title-layout2 overlay-gradient absolute-header">
                 <div class="container">
