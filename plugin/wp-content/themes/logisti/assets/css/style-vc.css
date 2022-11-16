@@ -155,5 +155,9 @@
 }
 
 span.tp-thumb-image {
-    border-radius:50%;
+    border-radius: 50%;
+}
+
+rs-arrow {
+    opacity: -20 !important;
 }

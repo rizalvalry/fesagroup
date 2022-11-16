@@ -7,19 +7,19 @@
                                 <div class="header-main-inner">
                                     <div class="site-branding clearfix"> <a class="logo-light" href="index.html"
                                             title="Logisti" rel="home"><img
-                                                src="plugin/wp-content/themes/logisti/assets/images/logo-light.png"
+                                                src="asset/logo-white.png"
                                                 alt="Logisti" /></a><a class="logo-dark" href="index.html"
                                             title="Logisti" rel="home"><img
-                                                src="plugin/wp-content/themes/logisti/assets/images/logo-dark.png"
+                                                src="asset/logo.png"
                                                 alt="Logisti" /></a><a class="logo-mobile" href="index.html"
                                             title="Logisti" rel="home"><img
-                                                src="plugin/wp-content/themes/logisti/assets/images/logo-dark.png"
+                                                src="asset/logo.png"
                                                 alt="Logisti" /></a></div>
                                 </div>
                             </div>
                             <div class="col-lg-9 col-md-12 col-sm-12" style="align-self: flex-end">
                                 <div class="site-header-top">
-                                    <div class="header-top-right">
+                                    <!-- <div class="header-top-right">
                                         <div class="site-contact-item clearfix"> <i class="zmdi zmdi-phone"></i>
                                             <p>085781571742</p>
                                         </div>
@@ -38,7 +38,7 @@
                                         <div class="header-button"> <a href="plugin/request-a-quote/index.html" target="_blank"
                                                 class="btn btn--icon"><i class="zmdi zmdi-file-text"></i>Request A
                                                 Quote</a></div>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <nav id="site-navigation" class="main-navigation clearfix">
                                     <div class="icon-in-nav">
