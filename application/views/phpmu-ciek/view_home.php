@@ -32,9 +32,9 @@
                                                 src="plugin/wp-content/uploads/2019/04/c_fancybox_1.png"
                                                 alt="Our Mission" /></div>
                                         <div class="cms-fancybox-content">
-                                            <h5 class="cms-fancybox-title" style=""> <?= $slidevisimisi['nama_sub'];?></h5>
+                                            <h5 class="cms-fancybox-title" style=""> <?= $slidevisimisi['judul'];?></h5>
                                             <div class="cms-fancybox-description">
-                                                <p><?= $slidevisimisi['isi_halaman']; ?></p>
+                                                <!-- <p><?= $slidevisimisi['isi_halaman']; ?></p> -->
                                             </div>
                                         </div>
                                     </div>
@@ -353,165 +353,79 @@
             <div class="vc_column-inner vc_custom_1555639260762">
                 <div class="wpb_wrapper">
                     <div class="cms-contact-form-tab    ">
+                        <?php $layananfesa = $this->model_utama->layananfesa(); ?>
                         <div class="nav nav-tabs" role="tablist"> <a class="tab-item active" data-toggle="tab" href=".tab-0"
                                 role="tab" aria-selected="true"> <img src="plugin/wp-content/uploads/2019/04/form-tab1.png"
-                                    alt="tab-icon1" /> <span>Request A Quote</span>
+                                    alt="tab-icon1" /> <span>Layanan Kami</span>
                             </a> <a class="tab-item " data-toggle="tab" href=".tab-1" role="tab" aria-selected="true"> <img
-                                    src="plugin/wp-content/uploads/2019/04/form-tab2.png" alt="tab-icon2" /> <span>Track
-                                    &amp;
-                                    Trace</span> </a></div>
+                                    src="plugin/wp-content/uploads/2019/04/form-tab2.png" alt="tab-icon2" /> <span>Transportasi</span> </a></div>
                     <div class="tab-content">
                         <div class="tab-pane fade tab-0 active show" role="tabpanel">
-                            <div class="cms-contact-form cms-contact-form-default    ">
-                                <div role="form" class="wpcf7" id="wpcf7-f1025-p20-o1" lang="en-US" dir="ltr">
-                                    <div class="screen-reader-response">
-                                        <p role="status" aria-live="polite" aria-atomic="true"></p>
-                                        <ul></ul>
-                                    </div>
-                                    <form action="https://demo.farost.net/logisti/#wpcf7-f1025-p20-o1" method="post"
-                                        class="wpcf7-form init" novalidate="novalidate" data-status="init">
-                                        <div style="display: none;"> <input type="hidden" name="_wpcf7" value="1025" />
-                                            <input type="hidden" name="_wpcf7_version" value="5.6.4" /> <input
-                                                type="hidden" name="_wpcf7_locale" value="en_US" /> <input type="hidden"
-                                                name="_wpcf7_unit_tag" value="wpcf7-f1025-p20-o1" />
-                                            <input type="hidden" name="_wpcf7_container_post" value="20" /> <input
-                                                type="hidden" name="_wpcf7_posted_data_hash" value="" />
-                                        </div>
-                                        <div class="wpcf7-response-output" aria-hidden="true"></div>
-                                        <div class="contact-form-box">
-                                            <h3 class="box-heading">Personal
-                                                Data</h3>
-                                            <div class="row">
-                                                <div class="col-lg-4"><span class="wpcf7-form-control-wrap"
-                                                        data-name="ct_name"><input type="text" name="ct_name" value=""
-                                                            size="40"
-                                                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                                            aria-required="true" aria-invalid="false"
-                                                            placeholder="Name *" /></span>
-                                                </div>
-                                                <div class="col-lg-4"><span class="wpcf7-form-control-wrap"
-                                                        data-name="ct_email"><input type="email" name="ct_email"
-                                                            value="" size="40"
-                                                            class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                                                            aria-required="true" aria-invalid="false"
-                                                            placeholder="Mail *" /></span>
-                                                </div>
-                                                <div class="col-lg-4"><span class="wpcf7-form-control-wrap"
-                                                        data-name="ct_phone"><input type="tel" name="ct_phone" value=""
-                                                            size="40"
-                                                            class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel"
-                                                            aria-required="true" aria-invalid="false"
-                                                            placeholder="Phone *" /></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="contact-form-box">
-                                            <h3 class="box-heading">Shipment
-                                                Data</h3>
-                                            <div class="row">
-                                                <div class="col-lg-4"><span class="wpcf7-form-control-wrap"
-                                                        data-name="packaging-type"><select name="packaging-type"
-                                                            class="wpcf7-form-control wpcf7-select"
-                                                            aria-invalid="false">
-                                                            <option value="Freight Type">
-                                                                Freight Type
-                                                            </option>
-                                                            <option value="Freight Type 1">
-                                                                Freight Type 1
-                                                            </option>
-                                                            <option value="Freight Type 2">
-                                                                Freight Type 2
-                                                            </option>
-                                                        </select></span></div>
-                                                <div class="col-lg-4"><span class="wpcf7-form-control-wrap"
-                                                        data-name="ct_city"><input type="text" name="ct_city" value=""
-                                                            size="40" class="wpcf7-form-control wpcf7-text"
-                                                            aria-invalid="false"
-                                                            placeholder="City of Departure" /></span>
-                                                </div>
-                                                <div class="col-lg-4"><span class="wpcf7-form-control-wrap"
-                                                        data-name="ct_delivery"><input type="text" name="ct_delivery"
-                                                            value="" size="40" class="wpcf7-form-control wpcf7-text"
-                                                            aria-invalid="false" placeholder="Delivery City" /></span>
-                                                </div>
-                                                <div class="col-lg-4"><span class="wpcf7-form-control-wrap"
-                                                        data-name="incoterms"><select name="incoterms"
-                                                            class="wpcf7-form-control wpcf7-select"
-                                                            aria-invalid="false">
-                                                            <option value="Incoterms">
-                                                                Incoterms
-                                                            </option>
-                                                            <option value="Incoterms 1">
-                                                                Incoterms 1
-                                                            </option>
-                                                            <option value="Incoterms 2">
-                                                                Incoterms 2
-                                                            </option>
-                                                        </select></span></div>
-                                                <div class="col-lg-4 clearfix">
-                                                    <div class="half-left"><span class="wpcf7-form-control-wrap"
-                                                            data-name="ct_weight"><input type="text" name="ct_weight"
-                                                                value="" size="40" class="wpcf7-form-control wpcf7-text"
-                                                                aria-invalid="false" placeholder="Weight" /></span>
-                                                    </div>
-                                                    <div class="half-right">
-                                                        <span class="wpcf7-form-control-wrap"
-                                                            data-name="ct_height"><input type="text" name="ct_height"
-                                                                value="" size="40" class="wpcf7-form-control wpcf7-text"
-                                                                aria-invalid="false" placeholder="Height" /></span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 clearfix">
-                                                    <div class="half-left"><span class="wpcf7-form-control-wrap"
-                                                            data-name="ct_width"><input type="text" name="ct_width"
-                                                                value="" size="40" class="wpcf7-form-control wpcf7-text"
-                                                                aria-invalid="false" placeholder="Width" /></span>
-                                                    </div>
-                                                    <div class="half-right">
-                                                        <span class="wpcf7-form-control-wrap"
-                                                            data-name="ct_length"><input type="text" name="ct_length"
-                                                                value="" size="40" class="wpcf7-form-control wpcf7-text"
-                                                                aria-invalid="false" placeholder="Length" /></span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-12"><span class="wpcf7-form-control-wrap"
-                                                        data-name="fragile"><span
-                                                            class="wpcf7-form-control wpcf7-radio"><span
-                                                                class="wpcf7-list-item first"><input type="radio"
-                                                                    name="fragile" value="Fragile"
-                                                                    checked="checked" /><span
-                                                                    class="wpcf7-list-item-label">Fragile</span></span><span
-                                                                class="wpcf7-list-item"><input type="radio"
-                                                                    name="fragile" value="Express Delivery" /><span
-                                                                    class="wpcf7-list-item-label">Express
-                                                                    Delivery</span></span><span
-                                                                class="wpcf7-list-item"><input type="radio"
-                                                                    name="fragile" value="Insurance" /><span
-                                                                    class="wpcf7-list-item-label">Insurance</span></span><span
-                                                                class="wpcf7-list-item last"><input type="radio"
-                                                                    name="fragile" value="Packaging" /><span
-                                                                    class="wpcf7-list-item-label">Packaging</span></span></span></span>
-                                                </div>
-                                            </div>
-                                        </div> <input type="submit" value="Request A Quote"
-                                            class="wpcf7-form-control has-spinner wpcf7-submit btn btn__fullwidth" />
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="cms-contact-box widget"
-                                style="background-image: url('plugin/wp-content/themes/logisti/assets/images/contact-box-widget.png');">
-                                <h2 class="widget-title"> How Can<br /> We Help
-                                    You!</h2>
-                                <div class="cms-contact-text">
-                                    <p>We understand the importance approaching
-                                        each work integrally and believe in the
-                                        power of simple and easy communication.
-                                    </p>
-                                </div>
-                                <div class="cms-contact-button"> <a href="plugin/contacts/index.html" target="_self"
-                                        class="btn btn--icon hover--slide"><i class="zmdi zmdi-email"></i>Contact
-                                        Us</a></div>
-                            </div>
+                        <div class="cms-case-studies-carousel layout3 logisti-carousel owl-carousel animation-time"
+                                                                        data-item-xs=1 data-item-sm=2 data-item-md=3
+                                                                        data-item-lg=3 data-margin=30 data-loop=false
+                                                                        data-autoplay=false data-autoplaytimeout=5000
+                                                                        data-smartspeed=250 data-center=false
+                                                                        data-arrows=false data-bullets=true
+                                                                        data-stagepadding=0 data-rtl=false>
+                                                                        <!-- start looping -->
+                                                                        <?php foreach ($layananfesa->result_array() as $slidelayanan){ ?>
+                                                                        <div class="grid-item-inner">
+                                                                            <div class="item-featured"
+                                                                                style="background: url('asset/foto_banner/<?= $slidelayanan['gambar'];?>')">
+                                                                                <a
+                                                                                    href="<?= $slidelayanan['link'];?>">
+                                                                                    <div class="overlay-gradient"></div>
+                                                                                    <i class="zmdi zmdi-plus"></i>
+                                                                                </a></div>
+                                                                            <div class="item-holder has-exerpt">
+                                                                                <!-- <div class="cat"> <a
+                                                                                        href="plugin/portfolio-category/distribution/index.html"
+                                                                                        rel="tag">Distribution</a>, <a
+                                                                                        href="plugin/portfolio-category/warehousing/index.html"
+                                                                                        rel="tag">Warehousing</a></div> -->
+                                                                                <h5> <a
+                                                                                        href="<?= $slidelayanan['link'];?>"><?= $slidelayanan['judul'] ?></a></h5>
+                                                                                <!-- <div class="item-content"> Cost savings
+                                                                                    is crucial, innovative technology
+                                                                                    minimizes your overall spend by
+                                                                                    utilizing an extensive consolidation
+                                                                                    schedule.</div> -->
+                                                                                <div class="item-readmore"> <a
+                                                                                        href="<?= $slidelayanan['link'];?>">Read
+                                                                                        More</a></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <?php } ?>
+                                                                        <!-- end looping -->
+                                                                        <!-- <div class="grid-item-inner">
+                                                                            <div class="item-featured"
+                                                                                style="background: url('plugin/wp-content/uploads/2019/03/shutterstock_722794939-980x616.jpg')">
+                                                                                <a
+                                                                                    href="plugin/portfolio/documents-electronic-data/index.html">
+                                                                                    <div class="overlay-gradient"></div>
+                                                                                    <i class="zmdi zmdi-plus"></i>
+                                                                                </a></div>
+                                                                            <div class="item-holder has-exerpt">
+                                                                                <div class="cat"> <a
+                                                                                        href="plugin/portfolio-category/analystics/index.html"
+                                                                                        rel="tag">Analystics</a>, <a
+                                                                                        href="plugin/portfolio-category/distribution/index.html"
+                                                                                        rel="tag">Distribution</a></div>
+                                                                                <h5> <a
+                                                                                        href="plugin/portfolio/documents-electronic-data/index.html">Documents
+                                                                                        &#038; Electronic Data</a></h5>
+                                                                                <div class="item-content"> Cost savings
+                                                                                    is crucial, innovative technology
+                                                                                    minimizes your overall spend by
+                                                                                    utilizing an extensive consolidation
+                                                                                    schedule.</div>
+                                                                                <div class="item-readmore"> <a
+                                                                                        href="plugin/portfolio/documents-electronic-data/index.html">Read
+                                                                                        More</a></div>
+                                                                            </div>
+                                                                        </div> -->
+                                                                    </div>
                         </div>
                         <div class="tab-pane fade tab-1 " role="tabpanel">
                             <div class="cms-contact-form cms-contact-form-default    ">
@@ -520,7 +434,7 @@
                                         <p role="status" aria-live="polite" aria-atomic="true"></p>
                                         <ul></ul>
                                     </div>
-                                    <form action="https://demo.farost.net/logisti/#wpcf7-f1028-p20-o2" method="post"
+                                    <!-- <form action="https://demo.farost.net/logisti/#wpcf7-f1028-p20-o2" method="post"
                                         class="wpcf7-form init" novalidate="novalidate" data-status="init">
                                         <div style="display: none;"> <input type="hidden" name="_wpcf7" value="1028" />
                                             <input type="hidden" name="_wpcf7_version" value="5.6.4" /> <input
@@ -586,7 +500,11 @@
                                             </div>
                                         </div> <input type="submit" value="Track &amp; Trace"
                                             class="wpcf7-form-control has-spinner wpcf7-submit btn btn__fullwidth" />
-                                    </form>
+                                    </form> -->
+                                    <!-- isi tombol ya -->
+                                    <a style="padding-right:20px;padding-left:20px;margin-top:34px;"
+                        href="galeri" target="_blank" class="btn btn-default"> <span>Lihat
+                            Galeri</span> </a>
                                 </div>
                             </div>
                             <div class="cms-contact-box widget"
@@ -1044,7 +962,7 @@ Milestones" style=""></div>
                     </div>
                     <div class="title-heading">
                         <h2 class="heading-tag title-underline" style="color:#ffffff;font-weight:700; "> Featured
-                            Projects</h2>
+                            & Galeri</h2>
                     </div>
                 </div>
                 <div class="cms-inline-css" style="display:none" data-css="    #cms-heading-5.layout2 .title-underline:after {
@@ -1106,7 +1024,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   
   /* padding: 10px; */
-  min-height: 30vw;
+  min-height: 20vw;
   text-align: center;
   /* background-color: #f1f1f1; */
 }
@@ -1116,20 +1034,20 @@ body {
     <!-- codee here -->
             <?php
 
-        $tab_result = $this->db->query("SELECT * FROM kategori where aktif='Y'");
+        $tab_result = $this->db->query("SELECT * FROM album where aktif='Y'");
         $tab_menu = '';
         $tab_content = '';
         $i = 0;
         $firstItem = true;
         foreach($tab_result->result_array() as $row)
         {
-            $ids = $row['id_kategori'];
-            // var_dump($row['nama_kategori']);die();
+            $ids = $row['id_album'];
+            // var_dump($row['jdl_album']);die();
         if($i == 0)
         {
         $tab_menu .= '
         <a class="filter-item active" data-toggle="tab" href=".'.$ids.'" role="tab" aria-selected="true"
-                                style="color: #ffffff">'.$row['nama_kategori'].'</a>
+                                style="color: #ffffff">'.$row['jdl_album'].'</a>
         ';
         $tab_content .= '
         <div class="'.$ids.' tab-pane fade show active" role="tabpanel">
@@ -1139,17 +1057,17 @@ body {
         {
         $tab_menu .= '
         <a class="filter-item" data-toggle="tab" href=".'.$ids.'" role="tab" aria-selected="true"
-        style="color: #ffffff">'. $row['nama_kategori'].'</a> 
+        style="color: #ffffff">'. $row['jdl_album'].'</a> 
         ';
         $tab_content .= '
         <div class="tab-pane fade '.$ids.'" role="tabpanel">
         ';
         }
-        $product_query = $this->db->query("SELECT * FROM berita WHERE id_kategori = $ids LIMIT 4");
+        $product_query = $this->db->query("SELECT * FROM gallery WHERE id_album = $ids LIMIT 4");
         $tab_content .= '<div class="row tree">';
         foreach($product_query->result_array() as $sub_row )
         {
-            $isi_layanan = strip_tags($sub_row['judul']); 
+            $isi_layanan = strip_tags($sub_row['jdl_gallery']); 
                                 $isi = substr($isi_layanan,0,150); 
                                 $isi = substr($isi_layanan,0,strrpos($isi," "));
         $tab_content .= '
@@ -1157,10 +1075,10 @@ body {
         
         <div class="column">
             <div class="card-project">
-                <img class="object-project" src="asset/foto_berita/'.$sub_row['gambar'].'" alt="Avatar" style="width:100%; height:200px;">
+                <img class="object-project" src="asset/img_galeri/'.$sub_row['gbr_gallery'].'" alt="Avatar" style="width:100%; height:200px;">
                 <div class="container">
-                <h5><b>'.$sub_row['judul'].'</b></h5> 
-                <p>'.$isi.'..</p> 
+                <h5><b>'.$sub_row['jdl_gallery'].'</b></h5> 
+                
                 </div>
             </div>
         </div>
@@ -1238,7 +1156,7 @@ body {
                     <div class="cms-space"></div>
                 </div>
                 <div class="cms-testimonial-title align-center">
-                    <h2 style="color:#ff5e14;">Client’s Testimonials</h2>
+                    <h2 style="color:#ff5e14;">Our Gallery</h2>
                 </div>
                 <div id="cms-testimonial-carousel" class="cms-testimonial-carousel layout1 owl-carousel  "
                     data-item-xs=1 data-item-sm=1 data-item-md=1 data-item-lg=1 data-margin=30 data-loop=false
@@ -1250,13 +1168,7 @@ body {
                             <div class="cms-testimonial-content clearfix" style="color:#9b9b9b;">
                                 <div class="testimonials-icon" style="color:#f1f1f1;"> <i class="zmdi zmdi-quote"></i>
                                 </div>
-                                <p class="content">Logisti team is the best of
-                                    the best, and expertly trained team members
-                                    who take the extra step and go the extra
-                                    mile, all to fulfill our dedicated promise
-                                    to deliver innovative and dynamic solutions
-                                    to our customers to fit the needs of a
-                                    rapidly changing global environment.</p>
+                                <p class="content">Tim Logisti adalah yang terbaik dari yang terbaik, dan anggota tim yang terlatih secara ahli yang mengambil langkah ekstra dan bekerja lebih keras, semua untuk memenuhi janji khusus kami untuk memberikan solusi inovatif dan dinamis kepada pelanggan kami agar sesuai dengan kebutuhan lingkungan global yang berubah dengan cepat.</p>
                             </div>
                         </div>
                     </div>
@@ -1376,12 +1288,12 @@ body {
                             Insight and Trends</p>
                     </div>
                     <div class="title-heading">
-                        <h2 class="heading-tag title-underline" style="font-weight:700; "> Recent Articles</h2>
+                        <h2 class="heading-tag title-underline" style="font-weight:700; "> Berita dan Artikel Terbaru</h2>
                     </div>
                     <div class="description">
-                        <p>Follow our latest news and thoughts which focuses
-                            exclusively on<br /> insight, industry trends, top
-                            news headlines.</p>
+                        <p>Ikuti berita dan pemikiran terbaru kami yang fokus
+                             secara eksklusif pada<br /> insight, tren industri, teratas
+                             berita utama.</p>
                     </div>
                 </div>
                 <div class="cms-inline-css" style="display:none" data-css="    #cms-heading-6.layout2 .title-underline:after {
@@ -1416,13 +1328,26 @@ body {
                     <div class="cms-grid-inner cms-grid-masonry row animation-time" data-gutter="15">
                         <div class="grid-sizer col-lg-4 col-md-6 col-sm-6 col-12">
                         </div>
+
+                        <?php 
+                    $terbaru = $this->db->query("SELECT * FROM berita a JOIN kategori b ON a.id_kategori=b.id_kategori ORDER BY a.dibaca DESC LIMIT 3"); ?>
+                    
+                        <!-- start looping -->
+                        <?php foreach ($terbaru->result_array() as $row){
+                            $isi_berita = strip_tags($row['isi_berita']); 
+                            $description = substr($isi_berita,0,360); 
+                            $description = substr($isi_berita,0,strrpos($description," "));
+
+                            $tanggaldetail = tgl_indo($row['tanggal']); 
+                      if ($row['gambar'] == ''){ $fotodetail = 'small_no-image.jpg'; }else{ $fotodetail = $row['gambar']; }
+                      ?>
                         <div class="grid-item col-lg-4 col-md-6 col-sm-6 col-12 ">
                             <div class="grid-item-inner wpb_animate_when_almost_visible wpb_fadeIn fadeIn">
                                 <!-- <a
                                     href="plugin/importance-of-specialized-focus-in-projects-oil-gas-logistics/index.html"> -->
                                     <div class="item-featured">
                                         <div class="item-background bg-image"
-                                            style="background: url('plugin/wp-content/uploads/2019/03/shutterstock_682632475-980x650.jpg')">
+                                            style="background: url('asset/foto_berita/<?= $fotodetail; ?>')">
                                         </div>
                                     </div>
                                 <!-- </a> -->
@@ -1441,22 +1366,17 @@ body {
                                         <span>Nov 2, 2022</span>
                                     </div>
                                     <h3 class="item-title"> 
-                                        <!-- <a
-                                            href="plugin/importance-of-specialized-focus-in-projects-oil-gas-logistics/index.html">Importers
-                                            achieve cost savings through the
-                                            First Sale rule!</a> -->
+                                        <a
+                                            href="plugin/importance-of-specialized-focus-in-projects-oil-gas-logistics/index.html">
+                                            <?= $row['judul']; ?></a>
                                         </h3>
-                                    <div class="item-content"> The trade war
-                                        currently ensuing between the US and
-                                        several nations around the globe, most
-                                        fiercely with China, shows no signs of
-                                        the first set of tariffs levied&hellip;
+                                    <div class="item-content"> <?= $description; ?>
                                     </div>
                                     <div class="item-readmore"> 
                                         <!-- <a
                                             href="plugin/importance-of-specialized-focus-in-projects-oil-gas-logistics/index.html"> -->
                                             <a
-                                            href="#">
+                                            href="<?php echo base_url() ?>berita/detail/<?= $row['judul_seo']; ?>">
                                             Read
                                             More
                                             </a>
@@ -1465,101 +1385,9 @@ body {
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item col-lg-4 col-md-6 col-sm-6 col-12 ">
-                            <div class="grid-item-inner wpb_animate_when_almost_visible wpb_fadeIn fadeIn">
-                                <!-- <a href="plugin/cargo-flow-through-better-supply-chain-visibility-control/index.html"> -->
-                                    <div class="item-featured">
-                                        <div class="item-background bg-image"
-                                            style="background: url('plugin/wp-content/uploads/2019/03/shutterstock_682632511-980x650.jpg')">
-                                        </div>
-                                    </div>
-                                <!-- </a> -->
-                                <div class="item-holder">
-                                    <div class="entry-meta">
-                                        <div class="cats-meta"> 
-                                            <!-- <a href="plugin/category/industry/index.html"
-                                                rel="tag">Industry</a> <a href="plugin/category/warehousing/index.html"
-                                                rel="tag">Warehousing</a> -->
-                                            <a href="#"
-                                                rel="tag">Industry</a> <a href="#"
-                                                rel="tag">Warehousing</a>
-                                            </div>
-                                        <span>Nov 2, 2022</span>
-                                    </div>
-                                    <h3 class="item-title"> 
-                                        <!-- <a
-                                            href="plugin/cargo-flow-through-better-supply-chain-visibility-control/index.html">Cargo
-                                            flow through better supply chain
-                                            visibility, control.</a> -->
-                                        </h3>
-                                    <div class="item-content"> Focus can provide
-                                        logistics personnel to meet the needs of
-                                        your company or project. We assist in
-                                        the recruitment of permanent staff, or
-                                        we can manage your logistics&hellip;
-                                    </div>
-                                    <div class="item-readmore"> 
-                                        <!-- <a
-                                            href="plugin/cargo-flow-through-better-supply-chain-visibility-control/index.html"> -->
-                                            <a
-                                            href="#">
-                                            Read
-                                            More
-                                            </a>
-                                        <!-- </a> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item col-lg-4 col-md-6 col-sm-6 col-12 ">
-                            <div class="grid-item-inner wpb_animate_when_almost_visible wpb_fadeIn fadeIn">
-                                <!-- <a
-                                    href="plugin/importance-of-specialized-focus-in-projects-oil-gas-logistic/index.html"> -->
-                                    <div class="item-featured">
-                                        <div class="item-background bg-image"
-                                            style="background: url('plugin/wp-content/uploads/2019/03/shutterstock_682632538-980x650.jpg')">
-                                        </div>
-                                    </div>
-                                <!-- </a> -->
-                                <div class="item-holder">
-                                    <div class="entry-meta">
-                                        <div class="cats-meta"> 
-                                            <!-- <a href="plugin/category/distribution/index.html"
-                                                rel="tag">Distribution</a> <a href="plugin/category/logistic/index.html"
-                                                rel="tag">Logistics</a> -->
-                                            <a href="#"
-                                                rel="tag">Distribution</a> <a href="#"
-                                                rel="tag">Logistics</a>
-                                            </div>
-                                        <span>Nov 2, 2022</span>
-                                    </div>
-                                    <h3 class="item-title"> 
-                                        <!-- <a
-                                            href="plugin/importance-of-specialized-focus-in-projects-oil-gas-logistic/index.html"> -->
-                                            Importance
-                                            of specialized focus in Projects,
-                                            Oil &#038; Gas Logistics?
-                                        <!-- </a> -->
-                                    </h3>
-                                    <div class="item-content"> The Journal notes
-                                        that last year, As investors such as
-                                        Black Rock look deeper into strategy and
-                                        climate change issues (and call them out
-                                        specifically in their
-                                        shareholder&hellip;</div>
-                                    <div class="item-readmore"> 
-                                        <!-- <a
-                                            href="plugin/importance-of-specialized-focus-in-projects-oil-gas-logistic/index.html"> -->
-                                            <a
-                                            href="#">
-                                            Read
-                                            More
-                                            </a>
-                                        <!-- </a> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php } ?>
+                        <!-- end looping -->
+                        
                     </div>
                 </div>
                 <div class="cms-inline-css" style="display:none" data-css="#cms-grid-blog .cms-grid-inner {

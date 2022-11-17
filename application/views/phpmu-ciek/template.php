@@ -21,7 +21,7 @@
           <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress." />
           <meta name="generator"
               content="Powered by Slider Revolution 6.0.5 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
-          <title>Logisti &#8211; Logistics &amp; Transportation WordPress Theme</title>
+              <title><?php include "phpmu-title.php"; ?></title>
           <link rel="stylesheet" id="siteground-optimizer-combined-css-6aeafcab0ecfe6d820c5029c39506e86"
               href="plugin/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-6aeafcab0ecfe6d820c5029c39506e86.css"
               media="all" />
@@ -81,7 +81,7 @@
           <link rel="alternate" type="text/xml+oembed"
               href="plugin/wp-json/oembed/1.0/embed59c2?url=https%3A%2F%2Fdemo.farost.net%2Flogisti%2F&amp;format=xml" />
           
-          <link rel="icon" type="image/png" href="plugin/wp-content/themes/logisti/assets/images/favicon.png" />
+          <link rel="icon" type="image/png" href="asset/favicon.ico" />
           
           <script
               type="text/javascript">function setREVStartSize(a) { try { var b, c = document.getElementById(a.c).parentNode.offsetWidth; if (c = 0 === c || isNaN(c) ? window.innerWidth : c, a.tabw = void 0 === a.tabw ? 0 : parseInt(a.tabw), a.thumbw = void 0 === a.thumbw ? 0 : parseInt(a.thumbw), a.tabh = void 0 === a.tabh ? 0 : parseInt(a.tabh), a.thumbh = void 0 === a.thumbh ? 0 : parseInt(a.thumbh), a.tabhide = void 0 === a.tabhide ? 0 : parseInt(a.tabhide), a.thumbhide = void 0 === a.thumbhide ? 0 : parseInt(a.thumbhide), a.mh = void 0 === a.mh || "" == a.mh ? 0 : a.mh, "fullscreen" === a.layout || "fullscreen" === a.l) b = Math.max(a.mh, window.innerHeight); else { for (var d in a.gw = Array.isArray(a.gw) ? a.gw : [a.gw], a.rl) (void 0 === a.gw[d] || 0 === a.gw[d]) && (a.gw[d] = a.gw[d - 1]); for (var d in a.gh = void 0 === a.el || "" === a.el || Array.isArray(a.el) && 0 == a.el.length ? a.gh : a.el, a.gh = Array.isArray(a.gh) ? a.gh : [a.gh], a.rl) (void 0 === a.gh[d] || 0 === a.gh[d]) && (a.gh[d] = a.gh[d - 1]); var e, f = Array(a.rl.length), g = 0; for (var d in a.tabw = a.tabhide >= c ? 0 : a.tabw, a.thumbw = a.thumbhide >= c ? 0 : a.thumbw, a.tabh = a.tabhide >= c ? 0 : a.tabh, a.thumbh = a.thumbhide >= c ? 0 : a.thumbh, a.rl) f[d] = a.rl[d] < window.innerWidth ? 0 : a.rl[d]; for (var d in e = f[0], f) e > f[d] && 0 < f[d] && (e = f[d], g = d); var h = c > a.gw[g] + a.tabw + a.thumbw ? 1 : (c - (a.tabw + a.thumbw)) / a.gw[g]; b = a.gh[g] * h + (a.tabh + a.thumbh) } void 0 === window.rs_init_css && (window.rs_init_css = document.head.appendChild(document.createElement("style"))), document.getElementById(a.c).height = b, window.rs_init_css.innerHTML += "#" + a.c + "_wrapper { height: " + b + "px }" } catch (a) { console.log("Failure at Presize of Slider:" + a) } };</script>
@@ -424,15 +424,13 @@
                                 <div class="cms-footer-item">
                                     <section id="media_image-3" class="cms-logo-footer widget widget_media_image"><a
                                             href="https://demo.farost.net/logisti"><img width="267" height="86"
-                                                src="plugin/wp-content/uploads/2019/04/logo-dark.png"
+                                                src="asset/logo.png"
                                                 class="image wp-image-1298  attachment-full size-full" alt=""
                                                 decoding="async" loading="lazy"
                                                 style="max-width: 100%; height: auto;" /></a></section>
                                     <section id="text-2" class="widget widget_text">
                                         <div class="textwidget">
-                                            <p>Our global logistics expertise, advanced supply chain technology &amp;
-                                                customized logistics solutions will help you develop and implement
-                                                successful supply.</p>
+                                            <p>We Grow with The Customer Trust, Through Quality, Cost and Delivery Time!</p>
                                         </div>
                                     </section>
                                     <section id="cs_social_widget-2" class="widget widget_cs_social_widget">
@@ -512,16 +510,16 @@
                                         <div class="cms-contact-info-inner">
                                             <div class="cms-contact-info-item type-phone">
                                                 <div class="cms-contact-info-holder"> <span>Phone: </span> <a
-                                                        href="tel:010612457410">010612457410</a></div>
+                                                        href="tel:085781571742">085781571742</a></div>
                                             </div>
                                             <div class="cms-contact-info-item type-email">
                                                 <div class="cms-contact-info-holder"> <span>Email: </span> <a
-                                                        href="mailto:Logisti@farost.com"> Logisti@farost.com </a></div>
+                                                        href="mailto:Logisti@farost.com"> info@fesagroup.co.id </a></div>
                                             </div>
                                             <div class="cms-contact-info-item type-address">
                                                 <div class="cms-contact-info-holder"> <span>Address: </span> <a
                                                         href="data/maps.google.com/index3a8f.html?q=2307%20Beverley%20Rd%20Brooklyn,%20NY"
-                                                        target="_blank"> 2307 Beverley Rd Brooklyn, NY </a></div>
+                                                        target="_blank"> Jl Raya Ciangsana - Nagrak 71 Gunung Putri - Cibinong Bogor - Indonesia </a></div>
                                             </div>
                                             <div class="cms-contact-info-item type-hours">
                                                 <div class="cms-contact-info-holder"> <span>Hours: </span> <span>

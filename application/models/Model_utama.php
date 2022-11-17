@@ -43,8 +43,14 @@ class Model_utama extends CI_model{
     }
 
     function visimisi() {
-        return $this->db->query("SELECT * FROM submenu s JOIN halamanstatis h ON s.id_main=h.id_halaman WHERE 
-        id_main=3 AND aktif='Y' ORDER BY id_sub ASC");
+        return $this->db->query("SELECT * FROM halamanstatis WHERE 
+        id_main=3");
+    }
+
+    function layananfesa() {
+        return $this->db->query("SELECT h.judul, h.isi_halaman, h.gambar, h.id_halaman, s.link_sub as link FROM submenu s 
+        JOIN halamanstatis h ON s.id_main=h.id_main 
+        WHERE h.id_main=63 AND aktif='Y' GROUP BY h.id_halaman");
     }
 
     function mainmenu(){
