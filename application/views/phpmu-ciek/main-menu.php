@@ -7,13 +7,13 @@
                                 <div class="header-main-inner">
                                     <div class="site-branding clearfix"> <a class="logo-light" href="index.html"
                                             title="Logisti" rel="home"><img
-                                                src="asset/logo-white.png"
+                                                src="<?php echo base_url(); ?>asset/logo-white.png"
                                                 alt="Logisti" /></a><a class="logo-dark" href="index.html"
                                             title="Logisti" rel="home"><img
-                                                src="asset/logo.png"
+                                                src="<?php echo base_url(); ?>asset/logo.png"
                                                 alt="Logisti" /></a><a class="logo-mobile" href="index.html"
                                             title="Logisti" rel="home"><img
-                                                src="asset/logo.png"
+                                                src="<?php echo base_url(); ?>asset/logo.png"
                                                 alt="Logisti" /></a></div>
                                 </div>
                             </div>

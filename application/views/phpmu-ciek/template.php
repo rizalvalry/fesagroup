@@ -17,25 +17,25 @@
           <meta name="spiders" content="all">
           <meta name="generator" content="WordPress 6.1" />
           <meta name="generator" content="Redux 4.3.20" />
-          <link rel="profile" href="data/gmpg.org/xfn/11.html">
+          <link rel="profile" href="<?php echo base_url(); ?>data/gmpg.org/xfn/11.html">
           <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress." />
           <meta name="generator"
               content="Powered by Slider Revolution 6.0.5 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
               <title><?php include "phpmu-title.php"; ?></title>
           <link rel="stylesheet" id="siteground-optimizer-combined-css-6aeafcab0ecfe6d820c5029c39506e86"
-              href="plugin/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-6aeafcab0ecfe6d820c5029c39506e86.css"
+              href="<?php echo base_url(); ?>plugin/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-6aeafcab0ecfe6d820c5029c39506e86.css"
               media="all" />
-          <link rel='dns-prefetch' href='data/fonts.googleapis.com/index.html' />
-          <link rel="alternate" type="application/rss+xml" title="Logisti &raquo; Feed" href="plugin/faqs/index.html" />
+          <link rel='dns-prefetch' href='<?php echo base_url(); ?>data/fonts.googleapis.com/index.html' />
+          <link rel="alternate" type="application/rss+xml" title="Logisti &raquo; Feed" href="<?php echo base_url(); ?>plugin/faqs/index.html" />
           <link rel="alternate" type="application/rss+xml" title="Logisti &raquo; Comments Feed"
-              href="plugin/comments/feed/index.html" />
+              href="<?php echo base_url(); ?>plugin/comments/feed/index.html" />
             <link rel="stylesheet" id="global-styles-inline-css"
-            href="plugin/wp-content/themes/logisti/assets/css/style-global.css"
+            href="<?php echo base_url(); ?>plugin/wp-content/themes/logisti/assets/css/style-global.css"
             media="all" />
         <!-- <style id='global-styles-inline-css' type='text/css'>
           </style> -->
           <link rel="stylesheet" id="extendify-gutenberg-patterns-and-templates-utilities-inline-css"
-            href="plugin/wp-content/themes/logisti/assets/css/style-extendify.css"
+            href="<?php echo base_url(); ?>plugin/wp-content/themes/logisti/assets/css/style-extendify.css"
             media="all" />
           <!-- <style id='extendify-gutenberg-patterns-and-templates-utilities-inline-css' type='text/css'>
           </style> -->
@@ -61,33 +61,33 @@
               @media screen and (min-width: 992px) {}
           </style>
           <link rel='stylesheet' id='logisti-google-fonts-css'
-              href='data/fonts.googleapis.com/css04cb.css?family=Roboto%3A300%2C400%2C400i%2C500%2C500i%2C600%2C600i%2C700%2C700i%7CWork+Sans%3A300%2C400%2C500%2C600%2C700%7CLato%3A400%2C700%7CCabin%3A400%2C700%7CPlayfair+Display%3A400&amp;subset=latin%2Clatin-ext&amp;ver=6.1'
+              href='<?php echo base_url(); ?>data/fonts.googleapis.com/css04cb.css?family=Roboto%3A300%2C400%2C400i%2C500%2C500i%2C600%2C600i%2C700%2C700i%7CWork+Sans%3A300%2C400%2C500%2C600%2C700%7CLato%3A400%2C700%7CCabin%3A400%2C700%7CPlayfair+Display%3A400&amp;subset=latin%2Clatin-ext&amp;ver=6.1'
               type='text/css' media='all' />
-          <script type='text/javascript' src='plugin/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
-          <script type='text/javascript' src='plugin/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
-          <script defer type='text/javascript' src='plugin/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.js'
+          <script type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+          <script type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+          <script defer type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.js'
               id='ppress-flatpickr-js'></script>
-          <script defer type='text/javascript' src='plugin/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.js'
+          <script defer type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.js'
               id='ppress-select2-js'></script>
-          <link rel="https://api.w.org/" href="plugin/wp-json/index.html" />
-          <link rel="alternate" type="application/json" href="plugin/wp-json/wp/v2/pages/20.json" />
+          <link rel="https://api.w.org/" href="<?php echo base_url(); ?>plugin/wp-json/index.html" />
+          <link rel="alternate" type="application/json" href="<?php echo base_url(); ?>plugin/wp-json/wp/v2/pages/20.json" />
           <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
           <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
           
           <link rel="canonical" href="index.html" />
           <link rel='shortlink' href='index.html' />
           <link rel="alternate" type="application/json+oembed"
-              href="plugin/wp-json/oembed/1.0/embed349d.json?url=https%3A%2F%2Fdemo.farost.net%2Flogisti%2F" />
+              href="<?php echo base_url(); ?>plugin/wp-json/oembed/1.0/embed349d.json?url=https%3A%2F%2Fdemo.farost.net%2Flogisti%2F" />
           <link rel="alternate" type="text/xml+oembed"
-              href="plugin/wp-json/oembed/1.0/embed59c2?url=https%3A%2F%2Fdemo.farost.net%2Flogisti%2F&amp;format=xml" />
+              href="<?php echo base_url(); ?>plugin/wp-json/oembed/1.0/embed59c2?url=https%3A%2F%2Fdemo.farost.net%2Flogisti%2F&amp;format=xml" />
           
-          <link rel="icon" type="image/png" href="asset/favicon.ico" />
+          <link rel="icon" type="image/png" href="<?php echo base_url(); ?>asset/favicon.ico" />
           
           <script
               type="text/javascript">function setREVStartSize(a) { try { var b, c = document.getElementById(a.c).parentNode.offsetWidth; if (c = 0 === c || isNaN(c) ? window.innerWidth : c, a.tabw = void 0 === a.tabw ? 0 : parseInt(a.tabw), a.thumbw = void 0 === a.thumbw ? 0 : parseInt(a.thumbw), a.tabh = void 0 === a.tabh ? 0 : parseInt(a.tabh), a.thumbh = void 0 === a.thumbh ? 0 : parseInt(a.thumbh), a.tabhide = void 0 === a.tabhide ? 0 : parseInt(a.tabhide), a.thumbhide = void 0 === a.thumbhide ? 0 : parseInt(a.thumbhide), a.mh = void 0 === a.mh || "" == a.mh ? 0 : a.mh, "fullscreen" === a.layout || "fullscreen" === a.l) b = Math.max(a.mh, window.innerHeight); else { for (var d in a.gw = Array.isArray(a.gw) ? a.gw : [a.gw], a.rl) (void 0 === a.gw[d] || 0 === a.gw[d]) && (a.gw[d] = a.gw[d - 1]); for (var d in a.gh = void 0 === a.el || "" === a.el || Array.isArray(a.el) && 0 == a.el.length ? a.gh : a.el, a.gh = Array.isArray(a.gh) ? a.gh : [a.gh], a.rl) (void 0 === a.gh[d] || 0 === a.gh[d]) && (a.gh[d] = a.gh[d - 1]); var e, f = Array(a.rl.length), g = 0; for (var d in a.tabw = a.tabhide >= c ? 0 : a.tabw, a.thumbw = a.thumbhide >= c ? 0 : a.thumbw, a.tabh = a.tabhide >= c ? 0 : a.tabh, a.thumbh = a.thumbhide >= c ? 0 : a.thumbh, a.rl) f[d] = a.rl[d] < window.innerWidth ? 0 : a.rl[d]; for (var d in e = f[0], f) e > f[d] && 0 < f[d] && (e = f[d], g = d); var h = c > a.gw[g] + a.tabw + a.thumbw ? 1 : (c - (a.tabw + a.thumbw)) / a.gw[g]; b = a.gh[g] * h + (a.tabh + a.thumbh) } void 0 === window.rs_init_css && (window.rs_init_css = document.head.appendChild(document.createElement("style"))), document.getElementById(a.c).height = b, window.rs_init_css.innerHTML += "#" + a.c + "_wrapper { height: " + b + "px }" } catch (a) { console.log("Failure at Presize of Slider:" + a) } };</script>
             
               <link rel="stylesheet" id="cms_theme_options-dynamic-css"
-                href="plugin/wp-content/themes/logisti/assets/css/style-dynamic.css"
+                href="<?php echo base_url(); ?>plugin/wp-content/themes/logisti/assets/css/style-dynamic.css"
                 media="all" class="redux-options-output"/>
           <!-- <style id="cms_theme_options-dynamic-css" title="dynamic-css" class="redux-options-output">
               
@@ -103,7 +103,7 @@
               }
           </style>
           <link rel="stylesheet" data-type="vc_shortcodes-custom-css"
-                href="plugin/wp-content/themes/logisti/assets/css/style-vc.css"
+                href="<?php echo base_url(); ?>plugin/wp-content/themes/logisti/assets/css/style-vc.css"
                 media="all" />
           <!-- <style type="text/css" data-type="vc_shortcodes-custom-css">
               
@@ -138,7 +138,7 @@
         if ($this->uri->segment('1')!='' AND $this->uri->segment('1')!='utama'){
             // include "slide.php"; 
         ?>
-        <div id="pagetitle" style="background-image:url('plugin/wp-content/uploads/2019/03/shutterstock_682632427.jpg');" class="page-title page-title-layout2 overlay-gradient absolute-header">
+        <div id="pagetitle" style="background-image:url('<?php echo base_url(); ?>plugin/wp-content/uploads/2019/03/shutterstock_682632427.jpg');" class="page-title page-title-layout2 overlay-gradient absolute-header">
                 <div class="container">
                     <div class="page-title-inner">
                         <ul class="cms-breadcrumb">
@@ -228,7 +228,7 @@
                                                         <div id="cms-contact-location"
                                                             class="cms-contact-location layout1  ">
                                                             <div class="title"> <img
-                                                                    src="plugin/wp-content/themes/logisti/assets/images/location_icon.png"
+                                                                    src="<?php echo base_url(); ?>plugin/wp-content/themes/logisti/assets/images/location_icon.png"
                                                                     alt="location_icon">
                                                                 <h3>Global Locations</h3>
                                                             </div>
@@ -424,7 +424,7 @@
                                 <div class="cms-footer-item">
                                     <section id="media_image-3" class="cms-logo-footer widget widget_media_image"><a
                                             href="https://demo.farost.net/logisti"><img width="267" height="86"
-                                                src="asset/logo.png"
+                                                src="<?php echo base_url(); ?>asset/logo.png"
                                                 class="image wp-image-1298  attachment-full size-full" alt=""
                                                 decoding="async" loading="lazy"
                                                 style="max-width: 100%; height: auto;" /></a></section>
@@ -453,22 +453,22 @@
                                             <ul id="menu-footer-top-2" class="menu">
                                                 <li id="menu-item-122"
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-122">
-                                                    <a href="plugin/about-us/index.html">About Us</a></li>
+                                                    <a href="<?php echo base_url(); ?>plugin/about-us/index.html">About Us</a></li>
                                                 <li id="menu-item-1285"
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1285">
-                                                    <a href="plugin/leadership-team/index.html">Meet Our Team</a></li>
+                                                    <a href="<?php echo base_url(); ?>plugin/leadership-team/index.html">Meet Our Team</a></li>
                                                 <li id="menu-item-124"
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124">
-                                                    <a href="plugin/blog-grid/index.html">New &#038; Media</a></li>
+                                                    <a href="<?php echo base_url(); ?>plugin/blog-grid/index.html">New &#038; Media</a></li>
                                                 <li id="menu-item-125"
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125">
-                                                    <a href="plugin/case-studies/index.html">Case Studies</a></li>
+                                                    <a href="<?php echo base_url(); ?>plugin/case-studies/index.html">Case Studies</a></li>
                                                 <li id="menu-item-126"
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126">
-                                                    <a href="plugin/contacts/index.html">Contact Us</a></li>
+                                                    <a href="<?php echo base_url(); ?>plugin/contacts/index.html">Contact Us</a></li>
                                                 <li id="menu-item-127"
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-127">
-                                                    <a href="plugin/careers/index.html">Work With Us</a></li>
+                                                    <a href="<?php echo base_url(); ?>plugin/careers/index.html">Work With Us</a></li>
                                             </ul>
                                         </div>
                                     </section>
@@ -482,22 +482,22 @@
                                             <ul id="menu-footer-top-3" class="menu">
                                                 <li id="menu-item-1289"
                                                     class="menu-item menu-item-type-post_type menu-item-object-service menu-item-1289">
-                                                    <a href="plugin/service/warehousing/index.html">Warehousing</a></li>
+                                                    <a href="<?php echo base_url(); ?>plugin/service/warehousing/index.html">Warehousing</a></li>
                                                 <li id="menu-item-1286"
                                                     class="menu-item menu-item-type-post_type menu-item-object-service menu-item-1286">
-                                                    <a href="plugin/service/air-freight/index.html">Air Freight</a></li>
+                                                    <a href="<?php echo base_url(); ?>plugin/service/air-freight/index.html">Air Freight</a></li>
                                                 <li id="menu-item-1287"
                                                     class="menu-item menu-item-type-post_type menu-item-object-service menu-item-1287">
-                                                    <a href="plugin/service/ocean-freight/index.html">Ocean Freight</a></li>
+                                                    <a href="<?php echo base_url(); ?>plugin/service/ocean-freight/index.html">Ocean Freight</a></li>
                                                 <li id="menu-item-1288"
                                                     class="menu-item menu-item-type-post_type menu-item-object-service menu-item-1288">
-                                                    <a href="plugin/service/road-freight/index.html">Road Freight</a></li>
+                                                    <a href="<?php echo base_url(); ?>plugin/service/road-freight/index.html">Road Freight</a></li>
                                                 <li id="menu-item-1290"
                                                     class="menu-item menu-item-type-post_type menu-item-object-service menu-item-1290">
-                                                    <a href="plugin/service/supply-chain/index.html">Supply Chain</a></li>
+                                                    <a href="<?php echo base_url(); ?>plugin/service/supply-chain/index.html">Supply Chain</a></li>
                                                 <li id="menu-item-1291"
                                                     class="menu-item menu-item-type-post_type menu-item-object-service menu-item-1291">
-                                                    <a href="plugin/service/packaging/index.html">Packaging</a></li>
+                                                    <a href="<?php echo base_url(); ?>plugin/service/packaging/index.html">Packaging</a></li>
                                             </ul>
                                         </div>
                                     </section>
@@ -518,7 +518,7 @@
                                             </div>
                                             <div class="cms-contact-info-item type-address">
                                                 <div class="cms-contact-info-holder"> <span>Address: </span> <a
-                                                        href="data/maps.google.com/index3a8f.html?q=2307%20Beverley%20Rd%20Brooklyn,%20NY"
+                                                        href="<?php echo base_url(); ?>data/maps.google.com/index3a8f.html?q=2307%20Beverley%20Rd%20Brooklyn,%20NY"
                                                         target="_blank"> Jl Raya Ciangsana - Nagrak 71 Gunung Putri - Cibinong Bogor - Indonesia </a></div>
                                             </div>
                                             <div class="cms-contact-info-item type-hours">
@@ -567,7 +567,7 @@
             </div> <a href="#" class="scroll-top fixed-bottom"><i class="zmdi zmdi-chevron-up"></i></a>
         </footer> <a href="#" class="scroll-top default"><i class="zmdi zmdi-long-arrow-up"></i></a>
     </div><!-- #page -->
-    <link href="data/fonts.googleapis.com/css6e11.css?family=Roboto:100%2C700%2C400%7CWork+Sans:700" rel="stylesheet"
+    <link href="<?php echo base_url(); ?>data/fonts.googleapis.com/css6e11.css?family=Roboto:100%2C700%2C400%7CWork+Sans:700" rel="stylesheet"
         property="stylesheet" type="text/css" media="all">
     <script type="text/javascript"> if (typeof revslider_showDoubleJqueryError === "undefined") {
             function revslider_showDoubleJqueryError(sliderID) {
@@ -582,68 +582,68 @@
                 jQuery(sliderID).show().html(err);
             }
         }; </script>
-    <script defer type='text/javascript' src='plugin/wp-content/plugins/contact-form-7/includes/swv/js/index.js'
+    <script defer type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/plugins/contact-form-7/includes/swv/js/index.js'
         id='swv-js'></script>
     <script type='text/javascript' id='contact-form-7-js-extra'> /* <![CDATA[ */
         var wpcf7 = { "api": { "root": "https:\/\/demo.farost.net\/logisti\/wp-json\/", "namespace": "contact-form-7\/v1" } };
 /* ]]> */ </script>
-    <script defer type='text/javascript' src='plugin/wp-content/plugins/contact-form-7/includes/js/index.js'
+    <script defer type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/plugins/contact-form-7/includes/js/index.js'
         id='contact-form-7-js'></script>
-    <script defer type='text/javascript' src='plugin/wp-content/plugins/revslider/public/assets/js/revolution.tools.min.js'
+    <script defer type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/plugins/revslider/public/assets/js/revolution.tools.min.js'
         id='tp-tools-js'></script>
-    <script defer type='text/javascript' src='plugin/wp-content/plugins/revslider/public/assets/js/rs6.min.js'
+    <script defer type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/plugins/revslider/public/assets/js/rs6.min.js'
         id='revmin-js'></script>
-    <script defer type='text/javascript' src='plugin/wp-content/plugins/themecore/assets/js/cms-front.js'
+    <script defer type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/plugins/themecore/assets/js/cms-front.js'
         id='cms-front-js-js'></script>
     <script type='text/javascript' id='ppress-frontend-script-js-extra'> /* <![CDATA[ */
         var pp_ajax_form = { "ajaxurl": "https:\/\/demo.farost.net\/logisti\/wp-admin\/admin-ajax.php", "confirm_delete": "Are you sure?", "deleting_text": "Deleting...", "deleting_error": "An error occurred. Please try again.", "nonce": "ce2cf5ca62", "disable_ajax_form": "false", "is_checkout": "0", "is_checkout_tax_enabled": "0" };
 /* ]]> */ </script>
-    <script defer type='text/javascript' src='plugin/wp-content/plugins/wp-user-avatar/assets/js/frontend.min.js'
+    <script defer type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/plugins/wp-user-avatar/assets/js/frontend.min.js'
         id='ppress-frontend-script-js'></script>
-    <script defer type='text/javascript' src='plugin/wp-content/themes/logisti/assets/js/bootstrap.min.js'
+    <script defer type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/themes/logisti/assets/js/bootstrap.min.js'
         id='bootstrap-js'></script>
-    <script defer type='text/javascript' src='plugin/wp-content/themes/logisti/assets/js/headroom.min.js'
+    <script defer type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/themes/logisti/assets/js/headroom.min.js'
         id='logisti-headroom-main-js'></script>
-    <script defer type='text/javascript' src='plugin/wp-content/themes/logisti/assets/js/headroom.js'
+    <script defer type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/themes/logisti/assets/js/headroom.js'
         id='logisti-headroom-js'></script>
-    <script defer type='text/javascript' src='plugin/wp-content/themes/logisti/assets/js/nice-select.min.js'
+    <script defer type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/themes/logisti/assets/js/nice-select.min.js'
         id='logisti-nice-select-js'></script>
-    <script defer type='text/javascript' src='plugin/wp-content/themes/logisti/assets/js/enscroll.js'
+    <script defer type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/themes/logisti/assets/js/enscroll.js'
         id='logisti-enscroll-js'></script>
-    <script defer type='text/javascript' src='plugin/wp-content/themes/logisti/assets/js/match-height-min.js'
+    <script defer type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/themes/logisti/assets/js/match-height-min.js'
         id='logisti-match-height-js'></script>
-    <script defer type='text/javascript' src='plugin/wp-content/themes/logisti/assets/js/magnific-popup.min.js'
+    <script defer type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/themes/logisti/assets/js/magnific-popup.min.js'
         id='logisti-magnific-popup-js'></script>
     <script type='text/javascript' id='logisti-main-js-extra'> /* <![CDATA[ */
         var main_data = { "ajax_url": "https:\/\/demo.farost.net\/logisti\/wp-admin\/admin-ajax.php" };
 /* ]]> */ </script>
-    <script defer type='text/javascript' src='plugin/wp-content/themes/logisti/assets/js/main.js'
+    <script defer type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/themes/logisti/assets/js/main.js'
         id='logisti-main-js'></script>
-    <script defer type='text/javascript' src='plugin/wp-content/themes/logisti/assets/js/YouTubePopUp.jquery.js'
+    <script defer type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/themes/logisti/assets/js/YouTubePopUp.jquery.js'
         id='video-popup-js'></script>
-    <script type='text/javascript' src='plugin/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js'
+    <script type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js'
         id='wpb_composer_front_js-js'></script>
-    <script type='text/javascript' src='plugin/wp-content/plugins/themecore/assets/js/owl.carousel.min.js'
+    <script type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/plugins/themecore/assets/js/owl.carousel.min.js'
         id='owl-carousel-js'></script>
-    <script type='text/javascript' src='plugin/wp-content/themes/logisti/assets/js/cms-carousel.js'
+    <script type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/themes/logisti/assets/js/cms-carousel.js'
         id='logisti-carousel-js'></script>
-    <script type='text/javascript' src='plugin/wp-content/plugins/themecore/assets/js/waypoints.min.js'
+    <script type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/plugins/themecore/assets/js/waypoints.min.js'
         id='waypoints-js'></script>
-    <script type='text/javascript' src='plugin/wp-content/themes/logisti/assets/js/counter.min.js'
+    <script type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/themes/logisti/assets/js/counter.min.js'
         id='logisti-counter-lib-js'></script>
-    <script type='text/javascript' src='plugin/wp-content/themes/logisti/assets/js/cms-counter.js'
+    <script type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/themes/logisti/assets/js/cms-counter.js'
         id='logisti-counter-js'></script>
     <script type='text/javascript'
-        src='plugin/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min.js' id='isotope-js'></script>
-    <script type='text/javascript' src='plugin/wp-includes/js/imagesloaded.min.js' id='imagesloaded-js'></script>
-    <script type='text/javascript' src='plugin/wp-content/themes/logisti/assets/js/isotope.cms.js'
+        src='<?php echo base_url(); ?>plugin/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min.js' id='isotope-js'></script>
+    <script type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-includes/js/imagesloaded.min.js' id='imagesloaded-js'></script>
+    <script type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/themes/logisti/assets/js/isotope.cms.js'
         id='logisti-isotope-js'></script>
-    <script type='text/javascript' src='plugin/wp-content/plugins/js_composer/assets/lib/vc_waypoints/vc-waypoints.min.js'
+    <script type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/plugins/js_composer/assets/lib/vc_waypoints/vc-waypoints.min.js'
         id='vc_waypoints-js'></script>
     <script type='text/javascript'
-        src='data/maps.googleapis.com/maps/api/js6820?key=AIzaSyA9YKb-KmokX_b8Ea6hKRVpKhdtjIXq3h8&amp;ver=3.0.0'
+        src='<?php echo base_url(); ?>data/maps.googleapis.com/maps/api/js6820?key=AIzaSyA9YKb-KmokX_b8Ea6hKRVpKhdtjIXq3h8&amp;ver=3.0.0'
         id='maps-googleapis-js'></script>
-    <script type='text/javascript' src='plugin/wp-content/themes/logisti/assets/js/cms-googlemap.js'
+    <script type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/themes/logisti/assets/js/cms-googlemap.js'
         id='cms.googlemap-js'></script>
     <script type="text/javascript"> setREVStartSize({ c: 'rev_slider_3_1', rl: [1920, 1350, 992, 768], el: [800, 768, 700, 600], gw: [1170, 1170, 768, 768], gh: [800, 768, 700, 600], layout: 'fullwidth', mh: "0" });
         var revapi3,
