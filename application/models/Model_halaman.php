@@ -14,11 +14,13 @@ class Model_halaman extends CI_model{
             if ($hasil['file_name']==''){
                     $datadb = array('judul'=>$this->db->escape_str($this->input->post('a')),
                                     'isi_halaman'=>$this->input->post('b'),
-                                    'tgl_posting'=>date('Y-m-d'));
+                                    'tgl_posting'=>date('Y-m-d'),
+                                    'id_main'=>$this->input->post('d'));
             }else{
             		$datadb = array('judul'=>$this->db->escape_str($this->input->post('a')),
                                     'isi_halaman'=>$this->input->post('b'),
                                     'tgl_posting'=>date('Y-m-d'),
+                                    'id_main'=>$this->input->post('d'),
                                     'gambar'=>$hasil['file_name']);
             }
         $this->db->insert('halamanstatis',$datadb);
@@ -26,6 +28,10 @@ class Model_halaman extends CI_model{
 
     function halamanstatis_edit($id){
         return $this->db->query("SELECT * FROM halamanstatis where id_halaman='$id'");
+    }
+
+    function kategori_halaman(){
+        return $this->db->query("SELECT * FROM submenu ORDER BY id_sub DESC");
     }
 
     function halamanstatis_update(){

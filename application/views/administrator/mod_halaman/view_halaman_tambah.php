@@ -13,6 +13,13 @@
                     <input type='hidden' name='id' value=''>
                     <tr><th width='120px' scope='row'>Judul</th>   <td><input type='text' class='form-control' name='a'></td></tr>
                     <tr><th scope='row'>Isi Halaman</th>                 <td><textarea id='editor1' class='form-control' name='b' style='height:260px'></textarea></td></tr>
+                    <tr><th scope='row'>Kategori</th>               <td><select name='d' class='form-control' required>
+                                                                            <option value='' selected>- Pilih Kategori -</option>";
+                                                                            foreach ($record->result_array() as $row){
+                                                                                echo "<option value='$row[id_sub]'>$row[nama_sub]</option>";
+                                                                            }
+                    echo "</td></tr>
+
                     <tr><th scope='row'>Gambar</th>                    <td><input type='file' class='form-control' name='c'></td></tr>
                   </tbody>
                   </table>

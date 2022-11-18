@@ -47,10 +47,18 @@ class Model_utama extends CI_model{
         id_main=3");
     }
 
+    function layanantrucking() {
+        return $this->db->query("SELECT * FROM halamanstatis h JOIN submenu s ON h.id_main = s.id_sub JOIN mainmenu m ON s.id_main = m.id_main 
+        WHERE m.link LIKE '%trucking%'");
+    }
+
     function layananfesa() {
-        return $this->db->query("SELECT h.judul, h.isi_halaman, h.gambar, h.id_halaman, s.link_sub as link FROM submenu s 
-        JOIN halamanstatis h ON s.id_main=h.id_main 
-        WHERE h.id_main=63 AND aktif='Y' GROUP BY h.id_halaman");
+        return $this->db->query("SELECT nama_menu FROM mainmenu WHERE link LIKE '%fesa%' ORDER BY id_main ASC");
+    }
+
+    function retail() {
+        return $this->db->query("SELECT * FROM halamanstatis h JOIN submenu s ON h.id_main = s.id_sub JOIN mainmenu m ON s.id_main = m.id_main 
+        WHERE m.link LIKE '%retail%'");
     }
 
     function mainmenu(){

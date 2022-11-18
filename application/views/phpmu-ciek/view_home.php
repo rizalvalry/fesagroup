@@ -353,79 +353,71 @@
             <div class="vc_column-inner vc_custom_1555639260762">
                 <div class="wpb_wrapper">
                     <div class="cms-contact-form-tab    ">
-                        <?php $layananfesa = $this->model_utama->layananfesa(); ?>
-                        <div class="nav nav-tabs" role="tablist"> <a class="tab-item active" data-toggle="tab" href=".tab-0"
-                                role="tab" aria-selected="true"> <img src="plugin/wp-content/uploads/2019/04/form-tab1.png"
-                                    alt="tab-icon1" /> <span>Layanan Kami</span>
-                            </a> <a class="tab-item " data-toggle="tab" href=".tab-1" role="tab" aria-selected="true"> <img
-                                    src="plugin/wp-content/uploads/2019/04/form-tab2.png" alt="tab-icon2" /> <span>Transportasi</span> </a></div>
+                        <?php 
+                        $layananfesa = $this->model_utama->layanantrucking();
+                        $layananretail = $this->model_utama->layananfesa();
+                        $retailservices = $this->model_utama->retail();
+                        
+                        ?>
+                                <div class="nav nav-tabs" role="tablist"> 
+                                    <!-- looping -->
+                                    <?php 
+                                    $tab = 0;
+                                    $loopicon = 1;
+                                    
+                                    foreach($layananretail->result_array() as $tablayanan) { ?>
+                                    <a class="tab-item <?= ($tab == 0) ? 'active' : ''
+         ?>" data-toggle="tab" href=".tab-<?=$tab; ?>"
+                                        role="tab" aria-selected="true"> <img src="plugin/wp-content/uploads/2019/04/form-tab<?=$loopicon;?>.png"
+                                             /> <span><?= $tablayanan['nama_menu']; ?></span>
+                                    </a> 
+                                    <!-- <a class="tab-item " data-toggle="tab" href=".tab-1" role="tab" aria-selected="true"> <img
+                                            src="plugin/wp-content/uploads/2019/04/form-tab2.png" alt="tab-icon2" /> <span>Retail</span> 
+                                        </a> -->
+                                        <?php $tab++; $loopicon++; } ?>
+                                        <!-- end looping -->
+                                </div>
                     <div class="tab-content">
                         <div class="tab-pane fade tab-0 active show" role="tabpanel">
-                        <div class="cms-case-studies-carousel layout3 logisti-carousel owl-carousel animation-time"
-                                                                        data-item-xs=1 data-item-sm=2 data-item-md=3
-                                                                        data-item-lg=3 data-margin=30 data-loop=false
-                                                                        data-autoplay=false data-autoplaytimeout=5000
-                                                                        data-smartspeed=250 data-center=false
-                                                                        data-arrows=false data-bullets=true
-                                                                        data-stagepadding=0 data-rtl=false>
-                                                                        <!-- start looping -->
-                                                                        <?php foreach ($layananfesa->result_array() as $slidelayanan){ ?>
-                                                                        <div class="grid-item-inner">
-                                                                            <div class="item-featured"
-                                                                                style="background: url('asset/foto_banner/<?= $slidelayanan['gambar'];?>')">
-                                                                                <a
-                                                                                    href="<?= $slidelayanan['link'];?>">
-                                                                                    <div class="overlay-gradient"></div>
-                                                                                    <i class="zmdi zmdi-plus"></i>
-                                                                                </a></div>
-                                                                            <div class="item-holder has-exerpt">
-                                                                                <!-- <div class="cat"> <a
-                                                                                        href="plugin/portfolio-category/distribution/index.html"
-                                                                                        rel="tag">Distribution</a>, <a
-                                                                                        href="plugin/portfolio-category/warehousing/index.html"
-                                                                                        rel="tag">Warehousing</a></div> -->
-                                                                                <h5> <a
-                                                                                        href="<?= $slidelayanan['link'];?>"><?= $slidelayanan['judul'] ?></a></h5>
-                                                                                <!-- <div class="item-content"> Cost savings
-                                                                                    is crucial, innovative technology
-                                                                                    minimizes your overall spend by
-                                                                                    utilizing an extensive consolidation
-                                                                                    schedule.</div> -->
-                                                                                <div class="item-readmore"> <a
-                                                                                        href="<?= $slidelayanan['link'];?>">Read
-                                                                                        More</a></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <?php } ?>
-                                                                        <!-- end looping -->
-                                                                        <!-- <div class="grid-item-inner">
-                                                                            <div class="item-featured"
-                                                                                style="background: url('plugin/wp-content/uploads/2019/03/shutterstock_722794939-980x616.jpg')">
-                                                                                <a
-                                                                                    href="plugin/portfolio/documents-electronic-data/index.html">
-                                                                                    <div class="overlay-gradient"></div>
-                                                                                    <i class="zmdi zmdi-plus"></i>
-                                                                                </a></div>
-                                                                            <div class="item-holder has-exerpt">
-                                                                                <div class="cat"> <a
-                                                                                        href="plugin/portfolio-category/analystics/index.html"
-                                                                                        rel="tag">Analystics</a>, <a
-                                                                                        href="plugin/portfolio-category/distribution/index.html"
-                                                                                        rel="tag">Distribution</a></div>
-                                                                                <h5> <a
-                                                                                        href="plugin/portfolio/documents-electronic-data/index.html">Documents
-                                                                                        &#038; Electronic Data</a></h5>
-                                                                                <div class="item-content"> Cost savings
-                                                                                    is crucial, innovative technology
-                                                                                    minimizes your overall spend by
-                                                                                    utilizing an extensive consolidation
-                                                                                    schedule.</div>
-                                                                                <div class="item-readmore"> <a
-                                                                                        href="plugin/portfolio/documents-electronic-data/index.html">Read
-                                                                                        More</a></div>
-                                                                            </div>
-                                                                        </div> -->
-                                                                    </div>
+                                <div class="cms-case-studies-carousel layout3 logisti-carousel owl-carousel animation-time"
+                                    data-item-xs=1 data-item-sm=2 data-item-md=3
+                                    data-item-lg=3 data-margin=30 data-loop=false
+                                    data-autoplay=false data-autoplaytimeout=5000
+                                    data-smartspeed=250 data-center=false
+                                    data-arrows=false data-bullets=true
+                                    data-stagepadding=0 data-rtl=false>
+                                    <!-- start looping -->
+                                    <?php foreach ($layananfesa->result_array() as $slidelayanan){ ?>
+                                    <div class="grid-item-inner">
+                                        <div class="item-featured"
+                                            style="background: url('asset/foto_banner/<?= $slidelayanan['gambar'];?>')">
+                                            <a
+                                                href="<?= base_url()."page/detail/".seo_title($slidelayanan['judul'])?>">
+                                                <div class="overlay-gradient"></div>
+                                                <i class="zmdi zmdi-plus"></i>
+                                            </a></div>
+                                        <div class="item-holder has-exerpt">
+                                            <!-- <div class="cat"> <a
+                                                    href="plugin/portfolio-category/distribution/index.html"
+                                                    rel="tag">Distribution</a>, <a
+                                                    href="plugin/portfolio-category/warehousing/index.html"
+                                                    rel="tag">Warehousing</a></div> -->
+                                            <h5> <a
+                                                    href="<?= base_url()."page/detail/".seo_title($slidelayanan['judul'])?>"><?= $slidelayanan['judul'] ?></a></h5>
+                                            <!-- <div class="item-content"> Cost savings
+                                                is crucial, innovative technology
+                                                minimizes your overall spend by
+                                                utilizing an extensive consolidation
+                                                schedule.</div> -->
+                                            <div class="item-readmore"> <a
+                                                    href="<?= base_url()."page/detail/".seo_title($slidelayanan['judul'])?>">Read
+                                                    More</a></div>
+                                        </div>
+                                    </div>
+                                    <?php } ?>
+                                    <!-- end looping -->
+                                   
+                                </div>
                         </div>
                         <div class="tab-pane fade tab-1 " role="tabpanel">
                             <div class="cms-contact-form cms-contact-form-default    ">
@@ -434,80 +426,55 @@
                                         <p role="status" aria-live="polite" aria-atomic="true"></p>
                                         <ul></ul>
                                     </div>
-                                    <!-- <form action="https://demo.farost.net/logisti/#wpcf7-f1028-p20-o2" method="post"
-                                        class="wpcf7-form init" novalidate="novalidate" data-status="init">
-                                        <div style="display: none;"> <input type="hidden" name="_wpcf7" value="1028" />
-                                            <input type="hidden" name="_wpcf7_version" value="5.6.4" /> <input
-                                                type="hidden" name="_wpcf7_locale" value="en_US" /> <input type="hidden"
-                                                name="_wpcf7_unit_tag" value="wpcf7-f1028-p20-o2" />
-                                            <input type="hidden" name="_wpcf7_container_post" value="20" /> <input
-                                                type="hidden" name="_wpcf7_posted_data_hash" value="" />
-                                        </div>
-                                        <div class="wpcf7-response-output" aria-hidden="true"></div>
-                                        <div class="contact-form-box">
-                                            <h3 class="box-heading">Shipment
-                                                Type</h3>
-                                            <div class="row">
-                                                <div class="col-lg-12"><span class="wpcf7-form-control-wrap"
-                                                        data-name="shipment-type"><select name="shipment-type"
-                                                            class="wpcf7-form-control wpcf7-select"
-                                                            aria-invalid="false">
-                                                            <option value="Shipment Type">
-                                                                Shipment Type
-                                                            </option>
-                                                            <option value="Type 1">
-                                                                Type 1</option>
-                                                            <option value="Type 2">
-                                                                Type 2</option>
-                                                        </select></span></div>
-                                            </div>
-                                        </div>
-                                        <div class="contact-form-box">
-                                            <h3 class="box-heading">Tracking
-                                                Number</h3>
-                                            <div class="row">
-                                                <div class="col-lg-12"><span class="wpcf7-form-control-wrap"
-                                                        data-name="tracking-number"><textarea name="tracking-number"
-                                                            cols="40" rows="10"
-                                                            class="wpcf7-form-control wpcf7-textarea"
-                                                            aria-invalid="false"
-                                                            placeholder="You can enter up to a maximum of 10 airway bill numbers for tracking."></textarea></span>
-                                                </div>
-                                                <div class="col-lg-12"><span class="wpcf7-form-control-wrap"
-                                                        data-name="radio-freight-type"><span
-                                                            class="wpcf7-form-control wpcf7-radio"><span
-                                                                class="wpcf7-list-item first"><input type="radio"
-                                                                    name="radio-freight-type" value="Air Freight"
-                                                                    checked="checked" /><span
-                                                                    class="wpcf7-list-item-label">Air
-                                                                    Freight</span></span><span
-                                                                class="wpcf7-list-item"><input type="radio"
-                                                                    name="radio-freight-type"
-                                                                    value="Ocean Freight" /><span
-                                                                    class="wpcf7-list-item-label">Ocean
-                                                                    Freight</span></span><span
-                                                                class="wpcf7-list-item"><input type="radio"
-                                                                    name="radio-freight-type"
-                                                                    value="Road Freight" /><span
-                                                                    class="wpcf7-list-item-label">Road
-                                                                    Freight</span></span><span
-                                                                class="wpcf7-list-item last"><input type="radio"
-                                                                    name="radio-freight-type"
-                                                                    value="Express Delivery" /><span
-                                                                    class="wpcf7-list-item-label">Express
-                                                                    Delivery</span></span></span></span>
-                                                </div>
-                                            </div>
-                                        </div> <input type="submit" value="Track &amp; Trace"
-                                            class="wpcf7-form-control has-spinner wpcf7-submit btn btn__fullwidth" />
-                                    </form> -->
                                     <!-- isi tombol ya -->
-                                    <a style="padding-right:20px;padding-left:20px;margin-top:34px;"
+                                    <!-- <a style="padding-right:20px;padding-left:20px;margin-top:34px;"
                         href="galeri" target="_blank" class="btn btn-default"> <span>Lihat
-                            Galeri</span> </a>
+                            Galeri</span> </a> -->
+
+                            <div class="cms-case-studies-carousel layout3 logisti-carousel owl-carousel animation-time"
+                                    data-item-xs=1 data-item-sm=2 data-item-md=3
+                                    data-item-lg=3 data-margin=30 data-loop=false
+                                    data-autoplay=false data-autoplaytimeout=5000
+                                    data-smartspeed=250 data-center=false
+                                    data-arrows=false data-bullets=true
+                                    data-stagepadding=0 data-rtl=false>
+                                    <!-- start looping -->
+                                    <?php foreach ($retailservices->result_array() as $slideretail){ ?>
+                                    <div class="grid-item-inner">
+                                        <div class="item-featured"
+                                            style="background: url('asset/foto_banner/<?= $slideretail['gambar'];?>')">
+                                            <a
+                                                href="<?= base_url()."page/detail/".seo_title($slideretail['judul'])?>">
+                                                <div class="overlay-gradient"></div>
+                                                <i class="zmdi zmdi-plus"></i>
+                                            </a></div>
+                                        <div class="item-holder has-exerpt">
+                                            <!-- <div class="cat"> <a
+                                                    href="plugin/portfolio-category/distribution/index.html"
+                                                    rel="tag">Distribution</a>, <a
+                                                    href="plugin/portfolio-category/warehousing/index.html"
+                                                    rel="tag">Warehousing</a></div> -->
+                                            <h5> <a
+                                                    href="<?= base_url()."page/detail/".seo_title($slideretail['judul'])?>"><?= $slideretail['judul'] ?></a></h5>
+                                            <!-- <div class="item-content"> Cost savings
+                                                is crucial, innovative technology
+                                                minimizes your overall spend by
+                                                utilizing an extensive consolidation
+                                                schedule.</div> -->
+                                            <div class="item-readmore"> <a
+                                                    href="<?= base_url()."page/detail/".seo_title($slideretail['judul'])?>">Read
+                                                    More</a></div>
+                                        </div>
+                                    </div>
+                                    <?php } ?>
+                                    <!-- end looping -->
+                                   
+                                </div>
+                                        <!-- end isi ya -->
+
                                 </div>
                             </div>
-                            <div class="cms-contact-box widget"
+                            <!-- <div class="cms-contact-box widget"
                                 style="background-image: url('plugin/wp-content/themes/logisti/assets/images/contact-box-widget.png');">
                                 <h2 class="widget-title"> How Can<br /> We Help
                                     You!</h2>
@@ -520,7 +487,7 @@
                                 <div class="cms-contact-button"> <a href="plugin/contacts/index.html" target="_self"
                                         class="btn btn--icon hover--slide"><i class="zmdi zmdi-email"></i>Contact
                                         Us</a></div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

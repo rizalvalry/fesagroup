@@ -170,7 +170,8 @@ class Administrator extends CI_Controller {
 			$this->model_halaman->halamanstatis_tambah();
 			redirect('administrator/halamanbaru');
 		}else{
-			$this->template->load('administrator/template','administrator/mod_halaman/view_halaman_tambah');
+			$data['record'] = $this->model_halaman->kategori_halaman();
+			$this->template->load('administrator/template','administrator/mod_halaman/view_halaman_tambah', $data);
 		}
 	}
 

@@ -11,6 +11,7 @@
                         <th style='width:20px'>No</th>
                         <th>Judul</th>
                         <th>Link</th>
+
                         <th>Tgl Posting</th>
                         <th style='width:50px'>Action</th>
                       </tr>
@@ -22,6 +23,7 @@
                     $tgl_posting = tgl_indo($row['tgl_posting']);
                     echo "<tr><td>$no</td>
                               <td>$row[judul]</td>
+                              
                               <td><a target='_BLANK' href='".base_url()."page/detail/".seo_title($row['judul'])."'>page/detail/".seo_title($row['judul'])."</a></td>
                               <td>$tgl_posting</td>
                               <td><center>
