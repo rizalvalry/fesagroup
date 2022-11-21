@@ -1310,14 +1310,14 @@ body {
                       ?>
                         <div class="grid-item col-lg-4 col-md-6 col-sm-6 col-12 ">
                             <div class="grid-item-inner wpb_animate_when_almost_visible wpb_fadeIn fadeIn">
-                                <!-- <a
-                                    href="plugin/importance-of-specialized-focus-in-projects-oil-gas-logistics/index.html"> -->
+                                <a
+                                    href="<?php echo base_url() ?>berita/detail/<?= $row['judul_seo']; ?>">
                                     <div class="item-featured">
                                         <div class="item-background bg-image"
                                             style="background: url('asset/foto_berita/<?= $fotodetail; ?>')">
                                         </div>
                                     </div>
-                                <!-- </a> -->
+                                </a>
                                 <div class="item-holder">
                                     <div class="entry-meta">
                                         <div class="cats-meta"> 
@@ -1334,7 +1334,7 @@ body {
                                     </div>
                                     <h3 class="item-title"> 
                                         <a
-                                            href="plugin/importance-of-specialized-focus-in-projects-oil-gas-logistics/index.html">
+                                            href="<?php echo base_url() ?>berita/detail/<?= $row['judul_seo']; ?>">
                                             <?= $row['judul']; ?></a>
                                         </h3>
                                     <div class="item-content"> <?= $description; ?>
