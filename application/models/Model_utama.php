@@ -235,6 +235,11 @@ class Model_utama extends CI_model{
         return $this->db->query("SELECT * FROM halamanstatis where lower(replace(judul,' ','-'))='".$this->db->escape_str($id)."'");
     }
 
+    function page_detailcontent($id){
+        return $this->db->query("SELECT * FROM halamanstatis h JOIN multiple_foto m 
+        ON h.id_halaman = m.id_halaman where lower(replace(judul,' ','-'))='".$this->db->escape_str($id)."'");
+    }
+
     function agenda($start, $limit){
         return $this->db->query("SELECT a.*, b.nama_lengkap FROM agenda a JOIN users b ON a.username=b.username ORDER BY a.id_agenda DESC LIMIT $start, $limit");
     }

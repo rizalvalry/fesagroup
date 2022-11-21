@@ -12,6 +12,9 @@ class Page extends CI_Controller {
 	        }
 		$data['title'] = $row->judul;
 		$data['record'] = $this->model_utama->page_detail($ids)->row_array();
+		$data['validate'] = $this->model_utama->page_detailcontent($ids)->row_array();
+		$data['addcontent'] = $this->model_utama->page_detailcontent($ids)->result_array();
+		
 		$this->template->load(template().'/template',template().'/view_page',$data);
 	}
 }

@@ -214,6 +214,8 @@ class Administrator extends CI_Controller {
         $this->load->view(template().'/rss',$data);
 		$this->template->load('administrator/template','administrator/mod_berita/view_berita',$data);
 	}
+
+	// layanan controller fesa
 	function layanan(){
 		cek_session_admin();
 		$data['record'] = $this->model_layanan->list_layanan();
@@ -877,6 +879,13 @@ class Administrator extends CI_Controller {
 		$this->template->load('administrator/template','administrator/mod_album/view_album',$data);
 	}
 
+	function multiplefoto() {
+		cek_session_admin();
+		$data['record'] = $this->model_multiplefoto->multiplefoto();
+		$this->template->load('administrator/template','administrator/mod_foto/view_foto',$data);
+	}
+
+
 	function tambah_album(){
 		cek_session_admin();
 		if (isset($_POST['submit'])){
@@ -885,6 +894,77 @@ class Administrator extends CI_Controller {
 		}else{
 			$this->template->load('administrator/template','administrator/mod_album/view_album_tambah');
 		}
+	}
+
+	function tambah_foto() {
+			$data['record'] = $this->model_multiplefoto->kategori_multiplefoto();
+			$this->template->load('administrator/template','administrator/mod_foto/view_foto_tambah', $data);
+	}
+	
+	
+	function proses_tambahfoto() {
+		cek_session_admin();
+		if (isset($_POST['submit'])){
+			
+		$this->load->library('upload');
+		$image = array();
+		$ImageCount = count($_FILES['nama_foto']['name']);
+		$keterangan_berkas = $this->input->post('deskripsi');
+            for($i = 0; $i < $ImageCount; $i++){
+                $_FILES['file']['name']       = $_FILES['nama_foto']['name'][$i];
+                $_FILES['file']['type']       = $_FILES['nama_foto']['type'][$i];
+                $_FILES['file']['tmp_name']   = $_FILES['nama_foto']['tmp_name'][$i];
+                $_FILES['file']['error']      = $_FILES['nama_foto']['error'][$i];
+                $_FILES['file']['size']       = $_FILES['nama_foto']['size'][$i];
+    
+                // File upload configuration
+                $uploadPath = 'asset/multiple_foto/';
+                $config['upload_path'] = $uploadPath;
+                $config['allowed_types'] = 'jpg|jpeg|png|gif';
+                $config['max_size'] = '3000'; // kb
+    
+                // Load and initialize upload library
+                $this->load->library('upload', $config);
+                $this->upload->initialize($config);
+                  $nameData = $this->input->post('deskripsi');
+    
+                  
+                // Upload file to server
+                if($this->upload->do_upload('file')){
+                    // Uploaded file data
+                    $imageData = $this->upload->data();
+                     
+                    $uploadImgData[$i]['nama_foto'] = $imageData['file_name'];
+                    $uploadImgData[$i]['deskripsi'] = $keterangan_berkas[$i];     
+                    $uploadImgData[$i]['id_halaman'] = $this->input->post('id_halaman');    
+    
+                }
+            }
+
+             if(!empty($uploadImgData)){
+                // Insert files data into the database
+                $this->model_multiplefoto->multipleinsert($uploadImgData);              
+            }
+			redirect('administrator/multiplefoto');
+		}
+	}
+
+	function edit_foto() {
+		cek_session_admin();
+		$id = $this->uri->segment(3);
+		if (isset($_POST['submit'])){
+			$this->model_multiplefoto->foto_update();
+			redirect('administrator/multiplefoto');
+		}else{
+			$data['rows'] = $this->model_multiplefoto->foto_edit($id)->row_array();
+			$this->template->load('administrator/template','administrator/mod_foto/view_foto_edit',$data);
+		}
+	}
+	
+	function delete_foto(){
+		$id = $this->uri->segment(3);
+		$this->model_multiplefoto->foto_delete($id);
+		redirect('administrator/multiplefoto');
 	}
 
 	function edit_album(){
