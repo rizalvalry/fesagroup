@@ -161,3 +161,7 @@ span.tp-thumb-image {
 rs-arrow {
     opacity: -20 !important;
 }
+
+.grid-item-inner.fesa {
+    padding: 10px;
+}
