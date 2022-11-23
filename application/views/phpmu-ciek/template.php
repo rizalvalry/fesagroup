@@ -26,9 +26,9 @@
               href="<?php echo base_url(); ?>plugin/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-6aeafcab0ecfe6d820c5029c39506e86.css"
               media="all" />
           <link rel='dns-prefetch' href='<?php echo base_url(); ?>data/fonts.googleapis.com/index.html' />
-          <link rel="alternate" type="application/rss+xml" title="Logisti &raquo; Feed" href="<?php echo base_url(); ?>plugin/faqs/index.html" />
-          <link rel="alternate" type="application/rss+xml" title="Logisti &raquo; Comments Feed"
-              href="<?php echo base_url(); ?>plugin/comments/feed/index.html" />
+          <!-- <link rel="alternate" type="application/rss+xml" title="Logisti &raquo; Feed" href="<?php echo base_url(); ?>plugin/faqs/index.html" /> -->
+          <!-- <link rel="alternate" type="application/rss+xml" title="Logisti &raquo; Comments Feed"
+              href="<?php echo base_url(); ?>plugin/comments/feed/index.html" /> -->
             <link rel="stylesheet" id="global-styles-inline-css"
             href="<?php echo base_url(); ?>plugin/wp-content/themes/logisti/assets/css/style-global.css"
             media="all" />
@@ -69,7 +69,7 @@
               id='ppress-flatpickr-js'></script>
           <script defer type='text/javascript' src='<?php echo base_url(); ?>plugin/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.js'
               id='ppress-select2-js'></script>
-          <link rel="https://api.w.org/" href="<?php echo base_url(); ?>plugin/wp-json/index.html" />
+          <!-- <link rel="https://api.w.org/" href="<?php echo base_url(); ?>plugin/wp-json/index.html" /> -->
           <link rel="alternate" type="application/json" href="<?php echo base_url(); ?>plugin/wp-json/wp/v2/pages/20.json" />
           <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
           <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
@@ -286,7 +286,7 @@
                                                                         aria-labelledby="heading-2"
                                                                         data-parent="#cms-contact-location">
                                                                         <div class="card-body">
-                                                                        l Raya Ciangsana - Nagrak 71
+                                                                        Jl Raya Ciangsana - Nagrak 71
                                                                         Gunung Putri - Cibinong
                                                                         Bogor - Indonesia
                                                                         </div>
@@ -316,16 +316,16 @@
                                                     <div class="wpb_wrapper">
                                                         <div id="cms-space-636702726a66f">
                                                             <div class="cms-inline-css" style="display:none" data-css="    @media screen and (min-width: 992px) {
- #cms-space-636702726a66f .cms-space {
- height: 30px;
- }
- }
- @media (min-width: 768px) and (max-width: 991px) {
- #cms-space-636702726a66f .cms-space {
- height: 30px;
- }
- }
- "></div>
+                                                                #cms-space-636702726a66f .cms-space {
+                                                                height: 30px;
+                                                                }
+                                                                }
+                                                                @media (min-width: 768px) and (max-width: 991px) {
+                                                                #cms-space-636702726a66f .cms-space {
+                                                                height: 30px;
+                                                                }
+                                                                }
+                                                                "></div>
                                                             <div class="cms-space"></div>
                                                         </div>
                                                         <div class="cms-newsletter placeholder-white   ">
@@ -348,11 +348,11 @@
                                                         </div>
                                                         <div id="cms-space-636702726b0a1">
                                                             <div class="cms-inline-css" style="display:none" data-css="    @media (min-width: 768px) and (max-width: 991px) {
- #cms-space-636702726b0a1 .cms-space {
- height: 38px;
- }
- }
- "></div>
+                                                                #cms-space-636702726b0a1 .cms-space {
+                                                                height: 38px;
+                                                                }
+                                                                }
+                                                                "></div>
                                                             <div class="cms-space"></div>
                                                         </div>
                                                     </div>
@@ -368,28 +368,20 @@
                                                     <div class="wpb_wrapper">
                                                         <div id="cms-space-636702726b653">
                                                             <div class="cms-inline-css" style="display:none" data-css="    @media (min-width: 576px) and (max-width: 767px) {
- #cms-space-636702726b653 .cms-space {
- height: 60px;
- }
- }
- @media screen and (max-width: 575px) {
- #cms-space-636702726b653 .cms-space {
- height: 60px;
- }
- }
- "></div>
+                                                                #cms-space-636702726b653 .cms-space {
+                                                                height: 60px;
+                                                                }
+                                                                }
+                                                                @media screen and (max-width: 575px) {
+                                                                #cms-space-636702726b653 .cms-space {
+                                                                height: 60px;
+                                                                }
+                                                                }
+                                                                "></div>
                                                             <div class="cms-space"></div>
                                                         </div>
                                                         <div class="cms-google-map style-default ">
-                                                            <div class="map-render"
-                                                                data-address='49 Tadema Rd, Chelsea, London SW10 0NY, United Kingdom'
-                                                                data-marker='%7B%22markercoordinate%22%3A%2251.4803538%2C-0.1823356%22%2C%22markericon%22%3A%22https%3A%5C%2F%5C%2Fdemo.farost.net%5C%2Flogisti%5C%2Fwp-content%5C%2Fthemes%5C%2Flogisti%5C%2Fassets%5C%2Fimages%5C%2Fmarker.png%22%7D'
-                                                                data-loader='%7B%7D'
-                                                                data-coordinate='51.4803538,-0.1823356'
-                                                                data-type='TERRAIN' data-zoom='13'
-                                                                data-template='JTVCJTBBJTIwJTIwJTIwJTIwJTdCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyZmVhdHVyZVR5cGUlMjIlM0ElMjAlMjJhbGwlMjIlMkMlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJlbGVtZW50VHlwZSUyMiUzQSUyMCUyMmdlb21ldHJ5LmZpbGwlMjIlMkMlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJzdHlsZXJzJTIyJTNBJTIwJTVCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTdCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyd2VpZ2h0JTIyJTNBJTIwJTIyMi4wMCUyMiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3RCUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU1RCUwQSUyMCUyMCUyMCUyMCU3RCUyQyUwQSUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmZlYXR1cmVUeXBlJTIyJTNBJTIwJTIyYWxsJTIyJTJDJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyZWxlbWVudFR5cGUlMjIlM0ElMjAlMjJnZW9tZXRyeS5zdHJva2UlMjIlMkMlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJzdHlsZXJzJTIyJTNBJTIwJTVCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTdCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyY29sb3IlMjIlM0ElMjAlMjIlMjM5YzljOWMlMjIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlN0QlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlNUQlMEElMjAlMjAlMjAlMjAlN0QlMkMlMEElMjAlMjAlMjAlMjAlN0IlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJmZWF0dXJlVHlwZSUyMiUzQSUyMCUyMmFsbCUyMiUyQyUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmVsZW1lbnRUeXBlJTIyJTNBJTIwJTIybGFiZWxzLnRleHQlMjIlMkMlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJzdHlsZXJzJTIyJTNBJTIwJTVCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTdCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIydmlzaWJpbGl0eSUyMiUzQSUyMCUyMm9uJTIyJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTdEJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTVEJTBBJTIwJTIwJTIwJTIwJTdEJTJDJTBBJTIwJTIwJTIwJTIwJTdCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyZmVhdHVyZVR5cGUlMjIlM0ElMjAlMjJsYW5kc2NhcGUlMjIlMkMlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJlbGVtZW50VHlwZSUyMiUzQSUyMCUyMmFsbCUyMiUyQyUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMnN0eWxlcnMlMjIlM0ElMjAlNUIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlN0IlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJjb2xvciUyMiUzQSUyMCUyMiUyM2YyZjJmMiUyMiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3RCUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU1RCUwQSUyMCUyMCUyMCUyMCU3RCUyQyUwQSUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmZlYXR1cmVUeXBlJTIyJTNBJTIwJTIybGFuZHNjYXBlJTIyJTJDJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyZWxlbWVudFR5cGUlMjIlM0ElMjAlMjJnZW9tZXRyeS5maWxsJTIyJTJDJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyc3R5bGVycyUyMiUzQSUyMCU1QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmNvbG9yJTIyJTNBJTIwJTIyJTIzZmZmZmZmJTIyJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTdEJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTVEJTBBJTIwJTIwJTIwJTIwJTdEJTJDJTBBJTIwJTIwJTIwJTIwJTdCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyZmVhdHVyZVR5cGUlMjIlM0ElMjAlMjJsYW5kc2NhcGUubWFuX21hZGUlMjIlMkMlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJlbGVtZW50VHlwZSUyMiUzQSUyMCUyMmdlb21ldHJ5LmZpbGwlMjIlMkMlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJzdHlsZXJzJTIyJTNBJTIwJTVCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTdCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyY29sb3IlMjIlM0ElMjAlMjIlMjNmZmZmZmYlMjIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlN0QlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlNUQlMEElMjAlMjAlMjAlMjAlN0QlMkMlMEElMjAlMjAlMjAlMjAlN0IlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJmZWF0dXJlVHlwZSUyMiUzQSUyMCUyMnBvaSUyMiUyQyUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmVsZW1lbnRUeXBlJTIyJTNBJTIwJTIyYWxsJTIyJTJDJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyc3R5bGVycyUyMiUzQSUyMCU1QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMnZpc2liaWxpdHklMjIlM0ElMjAlMjJvZmYlMjIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlN0QlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlNUQlMEElMjAlMjAlMjAlMjAlN0QlMkMlMEElMjAlMjAlMjAlMjAlN0IlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJmZWF0dXJlVHlwZSUyMiUzQSUyMCUyMnJvYWQlMjIlMkMlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJlbGVtZW50VHlwZSUyMiUzQSUyMCUyMmFsbCUyMiUyQyUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMnN0eWxlcnMlMjIlM0ElMjAlNUIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlN0IlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJzYXR1cmF0aW9uJTIyJTNBJTIwLTEwMCUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3RCUyQyUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmxpZ2h0bmVzcyUyMiUzQSUyMDQ1JTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTdEJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTVEJTBBJTIwJTIwJTIwJTIwJTdEJTJDJTBBJTIwJTIwJTIwJTIwJTdCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyZmVhdHVyZVR5cGUlMjIlM0ElMjAlMjJyb2FkJTIyJTJDJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyZWxlbWVudFR5cGUlMjIlM0ElMjAlMjJnZW9tZXRyeS5maWxsJTIyJTJDJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyc3R5bGVycyUyMiUzQSUyMCU1QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmNvbG9yJTIyJTNBJTIwJTIyJTIzZWVlZWVlJTIyJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTdEJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTVEJTBBJTIwJTIwJTIwJTIwJTdEJTJDJTBBJTIwJTIwJTIwJTIwJTdCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyZmVhdHVyZVR5cGUlMjIlM0ElMjAlMjJyb2FkJTIyJTJDJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyZWxlbWVudFR5cGUlMjIlM0ElMjAlMjJsYWJlbHMudGV4dC5maWxsJTIyJTJDJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyc3R5bGVycyUyMiUzQSUyMCU1QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmNvbG9yJTIyJTNBJTIwJTIyJTIzN2I3YjdiJTIyJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTdEJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTVEJTBBJTIwJTIwJTIwJTIwJTdEJTJDJTBBJTIwJTIwJTIwJTIwJTdCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyZmVhdHVyZVR5cGUlMjIlM0ElMjAlMjJyb2FkJTIyJTJDJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyZWxlbWVudFR5cGUlMjIlM0ElMjAlMjJsYWJlbHMudGV4dC5zdHJva2UlMjIlMkMlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJzdHlsZXJzJTIyJTNBJTIwJTVCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTdCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyY29sb3IlMjIlM0ElMjAlMjIlMjNmZmZmZmYlMjIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlN0QlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlNUQlMEElMjAlMjAlMjAlMjAlN0QlMkMlMEElMjAlMjAlMjAlMjAlN0IlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJmZWF0dXJlVHlwZSUyMiUzQSUyMCUyMnJvYWQuaGlnaHdheSUyMiUyQyUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmVsZW1lbnRUeXBlJTIyJTNBJTIwJTIyYWxsJTIyJTJDJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyc3R5bGVycyUyMiUzQSUyMCU1QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMnZpc2liaWxpdHklMjIlM0ElMjAlMjJzaW1wbGlmaWVkJTIyJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTdEJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTVEJTBBJTIwJTIwJTIwJTIwJTdEJTJDJTBBJTIwJTIwJTIwJTIwJTdCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyZmVhdHVyZVR5cGUlMjIlM0ElMjAlMjJyb2FkLmFydGVyaWFsJTIyJTJDJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyZWxlbWVudFR5cGUlMjIlM0ElMjAlMjJsYWJlbHMuaWNvbiUyMiUyQyUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMnN0eWxlcnMlMjIlM0ElMjAlNUIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlN0IlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJ2aXNpYmlsaXR5JTIyJTNBJTIwJTIyb2ZmJTIyJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTdEJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTVEJTBBJTIwJTIwJTIwJTIwJTdEJTJDJTBBJTIwJTIwJTIwJTIwJTdCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyZmVhdHVyZVR5cGUlMjIlM0ElMjAlMjJ0cmFuc2l0JTIyJTJDJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyZWxlbWVudFR5cGUlMjIlM0ElMjAlMjJhbGwlMjIlMkMlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJzdHlsZXJzJTIyJTNBJTIwJTVCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTdCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIydmlzaWJpbGl0eSUyMiUzQSUyMCUyMm9mZiUyMiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3RCUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU1RCUwQSUyMCUyMCUyMCUyMCU3RCUyQyUwQSUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmZlYXR1cmVUeXBlJTIyJTNBJTIwJTIyd2F0ZXIlMjIlMkMlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJlbGVtZW50VHlwZSUyMiUzQSUyMCUyMmFsbCUyMiUyQyUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMnN0eWxlcnMlMjIlM0ElMjAlNUIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlN0IlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJjb2xvciUyMiUzQSUyMCUyMiUyMzQ2YmNlYyUyMiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3RCUyQyUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMnZpc2liaWxpdHklMjIlM0ElMjAlMjJvbiUyMiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3RCUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU1RCUwQSUyMCUyMCUyMCUyMCU3RCUyQyUwQSUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmZlYXR1cmVUeXBlJTIyJTNBJTIwJTIyd2F0ZXIlMjIlMkMlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJlbGVtZW50VHlwZSUyMiUzQSUyMCUyMmdlb21ldHJ5LmZpbGwlMjIlMkMlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJzdHlsZXJzJTIyJTNBJTIwJTVCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTdCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyY29sb3IlMjIlM0ElMjAlMjIlMjNjOGQ3ZDQlMjIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlN0QlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlNUQlMEElMjAlMjAlMjAlMjAlN0QlMkMlMEElMjAlMjAlMjAlMjAlN0IlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJmZWF0dXJlVHlwZSUyMiUzQSUyMCUyMndhdGVyJTIyJTJDJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyZWxlbWVudFR5cGUlMjIlM0ElMjAlMjJsYWJlbHMudGV4dC5maWxsJTIyJTJDJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyc3R5bGVycyUyMiUzQSUyMCU1QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmNvbG9yJTIyJTNBJTIwJTIyJTIzMDcwNzA3JTIyJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTdEJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTVEJTBBJTIwJTIwJTIwJTIwJTdEJTJDJTBBJTIwJTIwJTIwJTIwJTdCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyZmVhdHVyZVR5cGUlMjIlM0ElMjAlMjJ3YXRlciUyMiUyQyUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmVsZW1lbnRUeXBlJTIyJTNBJTIwJTIybGFiZWxzLnRleHQuc3Ryb2tlJTIyJTJDJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyc3R5bGVycyUyMiUzQSUyMCU1QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmNvbG9yJTIyJTNBJTIwJTIyJTIzZmZmZmZmJTIyJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTdEJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTVEJTBBJTIwJTIwJTIwJTIwJTdEJTBBJTVE'
-                                                                data-controls='%7B%22scrollwheel%22%3A0%2C%22pancontrol%22%3Afalse%2C%22zoomcontrol%22%3Atrue%2C%22scalecontrol%22%3Afalse%2C%22maptypecontrol%22%3Atrue%2C%22streetviewcontrol%22%3Atrue%2C%22overviewmapcontrol%22%3Afalse%2C%22infoclick%22%3Afalse%2C%22infowidth%22%3A%22200%22%2C%22style%22%3A%22custom%22%7D'
-                                                                style="width:auto;height: 620px"></div>
+                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15860.527754516272!2d106.9431248!3d-6.3769641!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x67656756e3ef09b4!2sEkspedisi%20Fesa%20Antaran%20Logistik!5e0!3m2!1sid!2sid!4v1669171814229!5m2!1sid!2sid" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -453,22 +445,22 @@
                                             <ul id="menu-footer-top-2" class="menu">
                                                 <li id="menu-item-122"
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-122">
-                                                    <a href="<?php echo base_url(); ?>plugin/about-us/index.html">About Us</a></li>
+                                                    <a href="<?php echo base_url(); ?>#">About Us</a></li>
                                                 <li id="menu-item-1285"
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1285">
-                                                    <a href="<?php echo base_url(); ?>plugin/leadership-team/index.html">Meet Our Team</a></li>
+                                                    <a href="<?php echo base_url(); ?>#">Meet Our Team</a></li>
                                                 <li id="menu-item-124"
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124">
-                                                    <a href="<?php echo base_url(); ?>plugin/blog-grid/index.html">New &#038; Media</a></li>
+                                                    <a href="<?php echo base_url(); ?>#">New &#038; Media</a></li>
                                                 <li id="menu-item-125"
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125">
-                                                    <a href="<?php echo base_url(); ?>plugin/case-studies/index.html">Case Studies</a></li>
+                                                    <a href="<?php echo base_url(); ?>#">Case Studies</a></li>
                                                 <li id="menu-item-126"
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126">
-                                                    <a href="<?php echo base_url(); ?>plugin/contacts/index.html">Contact Us</a></li>
+                                                    <a href="<?php echo base_url(); ?>#">Contact Us</a></li>
                                                 <li id="menu-item-127"
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-127">
-                                                    <a href="<?php echo base_url(); ?>plugin/careers/index.html">Work With Us</a></li>
+                                                    <a href="<?php echo base_url(); ?>#">Work With Us</a></li>
                                             </ul>
                                         </div>
                                     </section>
@@ -482,22 +474,22 @@
                                             <ul id="menu-footer-top-3" class="menu">
                                                 <li id="menu-item-1289"
                                                     class="menu-item menu-item-type-post_type menu-item-object-service menu-item-1289">
-                                                    <a href="<?php echo base_url(); ?>plugin/service/warehousing/index.html">Warehousing</a></li>
+                                                    <a href="<?php echo base_url(); ?>#">Warehousing</a></li>
                                                 <li id="menu-item-1286"
                                                     class="menu-item menu-item-type-post_type menu-item-object-service menu-item-1286">
-                                                    <a href="<?php echo base_url(); ?>plugin/service/air-freight/index.html">Air Freight</a></li>
+                                                    <a href="<?php echo base_url(); ?>#">Air Freight</a></li>
                                                 <li id="menu-item-1287"
                                                     class="menu-item menu-item-type-post_type menu-item-object-service menu-item-1287">
-                                                    <a href="<?php echo base_url(); ?>plugin/service/ocean-freight/index.html">Ocean Freight</a></li>
+                                                    <a href="<?php echo base_url(); ?>#">Ocean Freight</a></li>
                                                 <li id="menu-item-1288"
                                                     class="menu-item menu-item-type-post_type menu-item-object-service menu-item-1288">
-                                                    <a href="<?php echo base_url(); ?>plugin/service/road-freight/index.html">Road Freight</a></li>
+                                                    <a href="<?php echo base_url(); ?>#">Road Freight</a></li>
                                                 <li id="menu-item-1290"
                                                     class="menu-item menu-item-type-post_type menu-item-object-service menu-item-1290">
-                                                    <a href="<?php echo base_url(); ?>plugin/service/supply-chain/index.html">Supply Chain</a></li>
+                                                    <a href="<?php echo base_url(); ?>#">Supply Chain</a></li>
                                                 <li id="menu-item-1291"
                                                     class="menu-item menu-item-type-post_type menu-item-object-service menu-item-1291">
-                                                    <a href="<?php echo base_url(); ?>plugin/service/packaging/index.html">Packaging</a></li>
+                                                    <a href="<?php echo base_url(); ?>#">Packaging</a></li>
                                             </ul>
                                         </div>
                                     </section>
@@ -518,7 +510,7 @@
                                             </div>
                                             <div class="cms-contact-info-item type-address">
                                                 <div class="cms-contact-info-holder"> <span>Address: </span> <a
-                                                        href="<?php echo base_url(); ?>data/maps.google.com/index3a8f.html?q=2307%20Beverley%20Rd%20Brooklyn,%20NY"
+                                                        href="https://goo.gl/maps/5FZYT2jGv7HA3LYg9"
                                                         target="_blank"> Jl Raya Ciangsana - Nagrak 71 Gunung Putri - Cibinong Bogor - Indonesia </a></div>
                                             </div>
                                             <div class="cms-contact-info-item type-hours">

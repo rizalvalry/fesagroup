@@ -5,7 +5,7 @@
             <div style='clear:both'><br></div>";
             
             echo "<div class='col-md-12'>";
-            echo '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3989.3358607198243!2d100.35483479999999!3d-0.8910373999999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b8aa1a4e0441%3A0x3f81ebb48d31a38b!2sTunggul+Hitam%2C+Padang+Utara%2C+Kota+Padang%2C+Sumatera+Barat+25173!5e0!3m2!1sid!2sid!4v1408275531365" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>';
+            echo '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15860.527754516272!2d106.9431248!3d-6.3769641!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x67656756e3ef09b4!2sEkspedisi%20Fesa%20Antaran%20Logistik!5e0!3m2!1sid!2sid!4v1669171814229!5m2!1sid!2sid" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>';
                 echo "<center>".$this->session->flashdata('message')."</center>";
                 $attributes = array('id' => 'formku','class'=>'form-horizontal','role'=>'form');
                 $ip         = $_SERVER['REMOTE_ADDR'];
