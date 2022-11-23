@@ -70,7 +70,7 @@ class Berita extends CI_Controller {
 	    $jumlah= $this->model_utama->hitungberitakategori($row->id_kategori)->num_rows();
 		$config['base_url'] = base_url().'berita/kategori/'.$row->kategori_seo;
 		$config['total_rows'] = $jumlah;
-		$config['per_page'] = 6; 	
+		$config['per_page'] = 9; 	
 			if ($this->uri->segment('4')!=''){
 				$dari = $this->uri->segment('4');
 			}else{
