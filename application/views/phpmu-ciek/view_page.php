@@ -326,24 +326,30 @@ if ($validate > 0) { ?>
                                                     <div class="wpb_wrapper">
                                                         <div id="cms-partner-carousel" class="cms-partner-carousel layout1  default owl-carousel  " data-item-xs=1 data-item-sm=3 data-item-md=4 data-item-lg=6 data-margin=30 data-loop=false data-autoplay=false data-autoplaytimeout=5000 data-smartspeed=250 data-center=false
                                                             data-arrows=false data-bullets=false data-stagepadding=0 data-rtl=false>
-                                                            <div class="cms-partner-item ">
-                                                                <a href="#" target="_self"> <img src="../wp-content/uploads/2019/04/partner01.png" alt="brand-image" /> </a>
-                                                            </div>
-                                                            <div class="cms-partner-item ">
-                                                                <a href="#" target="_self"> <img src="../wp-content/uploads/2019/04/partner02.png" alt="brand-image" /> </a>
-                                                            </div>
-                                                            <div class="cms-partner-item ">
-                                                                <a href="#" target="_self"> <img src="../wp-content/uploads/2019/04/partner03.png" alt="brand-image" /> </a>
-                                                            </div>
-                                                            <div class="cms-partner-item ">
-                                                                <a href="#" target="_self"> <img src="../wp-content/uploads/2019/04/partner04.png" alt="brand-image" /> </a>
-                                                            </div>
-                                                            <div class="cms-partner-item ">
-                                                                <a href="#" target="_self"> <img src="../wp-content/uploads/2019/04/partner05.png" alt="brand-image" /> </a>
-                                                            </div>
-                                                            <div class="cms-partner-item ">
-                                                                <a href="#" target="_self"> <img src="../wp-content/uploads/2019/04/partner06.png" alt="brand-image" /> </a>
-                                                            </div>
+
+                                                            <!-- loop here -->
+                                                                <?php 
+                                                                $banner = $this->model_utama->banner(0, 6); 
+                                                                foreach ($banner->result_array() as $rows){ 
+                                                                ?>
+                                                                    <div class="cms-partner-item "> 
+                                                                        <a href="#" target="_self">
+                                                                            <img src="<?= base_url(); ?>asset/foto_banner/<?= $rows['gambar']; ?>" alt="brand-image" /> 
+                                                                        </a>
+                                                                    </div>
+                                                                    <!-- <div class="cms-partner-item "> <a href="#" target="_self">
+                                                                            <img src="plugin/wp-content/uploads/2019/04/partner02.png" alt="brand-image" /> </a></div>
+                                                                    <div class="cms-partner-item "> <a href="#" target="_self">
+                                                                            <img src="plugin/wp-content/uploads/2019/04/partner03.png" alt="brand-image" /> </a></div>
+                                                                    <div class="cms-partner-item "> <a href="#" target="_self">
+                                                                            <img src="plugin/wp-content/uploads/2019/04/partner04.png" alt="brand-image" /> </a></div>
+                                                                    <div class="cms-partner-item "> <a href="#" target="_self">
+                                                                            <img src="plugin/wp-content/uploads/2019/04/partner05.png" alt="brand-image" /> </a></div>
+                                                                    <div class="cms-partner-item "> <a href="#" target="_self">
+                                                                            <img src="plugin/wp-content/uploads/2019/04/partner06.png" alt="brand-image" /> </a></div> -->
+                                                                    <?php } ?>
+                                                                    <!-- end loop -->
+
                                                         </div>
                                                     </div>
                                                 </div>

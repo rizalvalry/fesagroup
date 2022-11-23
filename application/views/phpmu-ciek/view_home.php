@@ -248,11 +248,11 @@
                                                     <img src="plugin/wp-content/uploads/2019/04/counter1.png"
                                                         alt="Clients Worldwide" />
                                                 </div> <span id="cms-counter-digit" class="cms-counter-digit"
-                                                    data-grouping="1" data-separator="," data-digit="3214"
-                                                    data-prefix="" data-suffix="m"
+                                                    data-grouping="1" data-separator="," data-digit="200"
+                                                    data-prefix="" 
                                                     style="font-size: 43px; color: #ffffff; "></span>
                                                 <p class="cms-counter-title" style="font-size: 14px; color: #ffffff; ">
-                                                    Clients Worldwide</p>
+                                                Klien di Seluruh Nusantara</p>
                                             </div>
                                         </div>
                                     </div>
@@ -272,10 +272,10 @@
                                                         alt="Delivered Goods" />
                                                 </div> <span id="cms-counter-2-digit" class="cms-counter-digit"
                                                     data-grouping="1" data-separator="," data-digit="5154"
-                                                    data-prefix="" data-suffix="m"
+                                                    data-prefix=""
                                                     style="font-size: 43px; color: #ffffff; "></span>
                                                 <p class="cms-counter-title" style="font-size: 14px; color: #ffffff; ">
-                                                    Delivered Goods</p>
+                                                mitra dengan Kiriman Terbaik</p>
                                             </div>
                                         </div>
                                     </div>
@@ -298,7 +298,7 @@
                                                     data-prefix="" data-suffix="m"
                                                     style="font-size: 43px; color: #ffffff; "></span>
                                                 <p class="cms-counter-title" style="font-size: 14px; color: #ffffff; ">
-                                                    Miles Driven</p>
+                                                    Logistik Perjalanan Handal</p>
                                             </div>
                                         </div>
                                     </div>
@@ -875,9 +875,17 @@ Milestones" style=""></div>
                     data-item-xs=1 data-item-sm=3 data-item-md=4 data-item-lg=6 data-margin=30 data-loop=false
                     data-autoplay=false data-autoplaytimeout=5000 data-smartspeed=250 data-center=false
                     data-arrows=false data-bullets=false data-stagepadding=0 data-rtl=false>
-                    <div class="cms-partner-item "> <a href="#" target="_self">
-                            <img src="plugin/wp-content/uploads/2019/04/partner01.png" alt="brand-image" /> </a></div>
-                    <div class="cms-partner-item "> <a href="#" target="_self">
+                    <!-- loop here -->
+                <?php 
+                $banner = $this->model_utama->banner(0, 6); 
+                foreach ($banner->result_array() as $rows){ 
+                 ?>
+                    <div class="cms-partner-item "> 
+                        <a href="#" target="_self">
+                            <img src="<?= base_url(); ?>asset/foto_banner/<?= $rows['gambar']; ?>" alt="brand-image" /> 
+                        </a>
+                    </div>
+                    <!-- <div class="cms-partner-item "> <a href="#" target="_self">
                             <img src="plugin/wp-content/uploads/2019/04/partner02.png" alt="brand-image" /> </a></div>
                     <div class="cms-partner-item "> <a href="#" target="_self">
                             <img src="plugin/wp-content/uploads/2019/04/partner03.png" alt="brand-image" /> </a></div>
@@ -886,7 +894,9 @@ Milestones" style=""></div>
                     <div class="cms-partner-item "> <a href="#" target="_self">
                             <img src="plugin/wp-content/uploads/2019/04/partner05.png" alt="brand-image" /> </a></div>
                     <div class="cms-partner-item "> <a href="#" target="_self">
-                            <img src="plugin/wp-content/uploads/2019/04/partner06.png" alt="brand-image" /> </a></div>
+                            <img src="plugin/wp-content/uploads/2019/04/partner06.png" alt="brand-image" /> </a></div> -->
+                    <?php } ?>
+                    <!-- end loop -->
                 </div>
             </div>
         </div>

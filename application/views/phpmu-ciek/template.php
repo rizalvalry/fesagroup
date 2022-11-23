@@ -443,10 +443,13 @@
                                         <h6 class="footer-widget-title">Who We Are</h6>
                                         <div class="menu-footer-top-2-container">
                                             <ul id="menu-footer-top-2" class="menu">
+                                                <!-- loop here -->
+                                                <?php $visimision = $this->model_utama->visimisi(); 
+                                        foreach ($visimision->result_array() as $slidevisimisi){ ?>
                                                 <li id="menu-item-122"
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-122">
-                                                    <a href="<?php echo base_url(); ?>#">About Us</a></li>
-                                                <li id="menu-item-1285"
+                                                    <a href="<?= base_url()."page/detail/".seo_title($slidevisimisi['judul'])?>"><?= $slidevisimisi['judul']; ?></a></li>
+                                                <!-- <li id="menu-item-1285"
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1285">
                                                     <a href="<?php echo base_url(); ?>#">Meet Our Team</a></li>
                                                 <li id="menu-item-124"
@@ -460,7 +463,9 @@
                                                     <a href="<?php echo base_url(); ?>#">Contact Us</a></li>
                                                 <li id="menu-item-127"
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-127">
-                                                    <a href="<?php echo base_url(); ?>#">Work With Us</a></li>
+                                                    <a href="<?php echo base_url(); ?>#">Work With Us</a></li> -->
+                                                    <?php } ?>
+                                                    <!-- end loop -->
                                             </ul>
                                         </div>
                                     </section>
@@ -472,10 +477,13 @@
                                         <h6 class="footer-widget-title">What We Do</h6>
                                         <div class="menu-footer-top-3-container">
                                             <ul id="menu-footer-top-3" class="menu">
+                                                <!-- loop here -->
+                                                <?php $footer = $this->model_utama->layananfooter();
+                                                    foreach ($footer->result_array() as $footermenu){ ?>
                                                 <li id="menu-item-1289"
                                                     class="menu-item menu-item-type-post_type menu-item-object-service menu-item-1289">
-                                                    <a href="<?php echo base_url(); ?>#">Warehousing</a></li>
-                                                <li id="menu-item-1286"
+                                                    <a href="<?= base_url()."page/detail/".seo_title($footermenu['judul'])?>"><?= $footermenu['judul']; ?></a></li>
+                                                <!-- <li id="menu-item-1286"
                                                     class="menu-item menu-item-type-post_type menu-item-object-service menu-item-1286">
                                                     <a href="<?php echo base_url(); ?>#">Air Freight</a></li>
                                                 <li id="menu-item-1287"
@@ -489,7 +497,9 @@
                                                     <a href="<?php echo base_url(); ?>#">Supply Chain</a></li>
                                                 <li id="menu-item-1291"
                                                     class="menu-item menu-item-type-post_type menu-item-object-service menu-item-1291">
-                                                    <a href="<?php echo base_url(); ?>#">Packaging</a></li>
+                                                    <a href="<?php echo base_url(); ?>#">Packaging</a></li> -->
+                                                    <?php } ?>
+                                                    <!-- end here -->
                                             </ul>
                                         </div>
                                     </section>

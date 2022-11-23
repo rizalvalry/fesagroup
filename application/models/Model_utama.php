@@ -8,6 +8,10 @@ class Model_utama extends CI_model{
         return $this->db->query("SELECT a.*, b.nama_kategori FROM layanan a LEFT JOIN kategori_layanan b ON a.id_kategori=b.id_kategori WHERE a.headline='Y' AND b.nama_kategori NOT LIKE '%Priority%' ORDER BY a.id_layanan DESC LIMIT $dari, $jumlah");
     }
 
+    function layananfooter() {
+        return $this->db->query("SELECT a.*, b.nama_kategori FROM layanan a LEFT JOIN kategori_layanan b ON a.id_kategori=b.id_kategori WHERE a.headline='Y'");
+    }
+
     function kategori($dari, $jumlah){
         return $this->db->query("SELECT * FROM kategori where aktif='Y' ORDER BY id_kategori ASC LIMIT $dari, $jumlah");
     }
