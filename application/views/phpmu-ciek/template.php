@@ -332,7 +332,7 @@
                                                             <div class="cms-newsletter-inner">
                                                                 <div class="tnp tnp-subscription">
                                                                     <form method="post"
-                                                                        action="https://demo.farost.net/logisti/?na=s">
+                                                                        action="<?= base_url(); ?>">
                                                                         <input type="hidden" name="nlang" value="">
                                                                         <div class="tnp-field tnp-field-email"><label
                                                                                 for="tnp-1">Your Email Address</label>
@@ -401,7 +401,7 @@
             <div class="cms-modal-inner">
                 <div class="cms-modal-content">
                     <form role="search" method="get" class="cms-search-form placeholder-white"
-                        action="https://demo.farost.net/logisti/"> <button type="submit" class="search-submit"><i
+                        action="<?= base_url(); ?>"> <button type="submit" class="search-submit"><i
                                 class="fa fa-search"></i></button> <input type="text" id="searchFocus"
                             placeholder="Search..." name="s" class="search-field" /></form>
                 </div>
@@ -415,7 +415,7 @@
                             <div class="col-xl-5 col-lg-5 col-md-5">
                                 <div class="cms-footer-item">
                                     <section id="media_image-3" class="cms-logo-footer widget widget_media_image"><a
-                                            href="https://demo.farost.net/logisti"><img width="267" height="86"
+                                            href="<?= base_url(); ?>"><img width="267" height="86"
                                                 src="<?php echo base_url(); ?>asset/logo.png"
                                                 class="image wp-image-1298  attachment-full size-full" alt=""
                                                 decoding="async" loading="lazy"
