@@ -574,16 +574,16 @@
                                 <div class="grid-item-inner style1 wpb_animate_when_almost_visible wpb_fadeIn fadeIn">
                                     <div class="item-featured bg-image"
                                         style="background: url('<?=base_url()?>asset/foto_layanan/<?= $foto_slide; ?>')">
-                                        <a href="plugin/service/air-freight/index.html">
+                                        <a href="#">
                                             <div class="primary-overlay"></div>
                                         </a>
                                         <div class="item-holder">
                                             <div class="icon-wrap"> <img class="svg service-icon"
                                                     src="<?=base_url()?>asset/foto_layanan/<?= $foto_slide; ?>" alt="" style="border-radius:20%;">
                                             </div>
-                                            <h4> <a href="plugin/service/air-freight/index.html"><?= $row['nama_kategori']; ?></a></h4>
+                                            <h4> <a href="#"><?= $row['nama_kategori']; ?></a></h4>
                                             <div class="item-content"> <?= $isi; ?>&hellip;</div>
-                                            <div class="item-readmore"> <a href="plugin/service/air-freight/index.html">Read
+                                            <div class="item-readmore"> <a href="#">Read
                                                     More</a></div>
                                         </div>
                                     </div>

@@ -74,8 +74,8 @@
           <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
           <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
           
-          <link rel="canonical" href="index.html" />
-          <link rel='shortlink' href='index.html' />
+          <link rel="canonical" href="<?= base_url(); ?>" />
+          <link rel='shortlink' href='<?= base_url(); ?>' />
           <link rel="alternate" type="application/json+oembed"
               href="<?php echo base_url(); ?>plugin/wp-json/oembed/1.0/embed349d.json?url=https%3A%2F%2Fdemo.farost.net%2Flogisti%2F" />
           <link rel="alternate" type="text/xml+oembed"
