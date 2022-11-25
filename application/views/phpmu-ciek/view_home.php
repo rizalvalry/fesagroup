@@ -991,8 +991,8 @@ body {
 }
 
 .object-project {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     /* border-radius:5px; */
 }
 
