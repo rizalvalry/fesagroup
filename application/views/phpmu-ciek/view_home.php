@@ -99,7 +99,7 @@
                         }
                         }
                     ">
-</div>
+                </div>
                     <div class="cms-space"></div>
                 </div>
             </div>
@@ -366,8 +366,7 @@
                                     $loopicon = 1;
                                     
                                     foreach($layananretail->result_array() as $tablayanan) { ?>
-                                    <a class="tab-item <?= ($tab == 0) ? 'active' : ''
-         ?>" data-toggle="tab" href=".tab-<?=$tab; ?>"
+                                    <a class="tab-item <?= ($tab == 0) ? 'active' : '' ?>" data-toggle="tab" href=".tab-<?=$tab; ?>"
                                         role="tab" aria-selected="true"> <img src="plugin/wp-content/uploads/2019/04/form-tab<?=$loopicon;?>.png"
                                              /> <span><?= $tablayanan['nama_menu']; ?></span>
                                     </a> 
@@ -910,26 +909,27 @@ Milestones" style=""></div>
             <div class="wpb_wrapper">
                 <div id="cms-space-636702725f3d9">
                     <div class="cms-inline-css" style="display:none" data-css="    @media screen and (min-width: 992px) {
- #cms-space-636702725f3d9 .cms-space {
- height: 90px;
- }
- }
- @media (min-width: 768px) and (max-width: 991px) {
- #cms-space-636702725f3d9 .cms-space {
- height: 40px;
- }
- }
- @media (min-width: 576px) and (max-width: 767px) {
- #cms-space-636702725f3d9 .cms-space {
- height: 40px;
- }
- }
- @media screen and (max-width: 575px) {
- #cms-space-636702725f3d9 .cms-space {
- height: 40px;
- }
- }
- "></div>
+                        #cms-space-636702725f3d9 .cms-space {
+                        height: 90px;
+                        }
+                        }
+                        @media (min-width: 768px) and (max-width: 991px) {
+                        #cms-space-636702725f3d9 .cms-space {
+                        height: 40px;
+                        }
+                        }
+                        @media (min-width: 576px) and (max-width: 767px) {
+                        #cms-space-636702725f3d9 .cms-space {
+                        height: 40px;
+                        }
+                        }
+                        @media screen and (max-width: 575px) {
+                        #cms-space-636702725f3d9 .cms-space {
+                        height: 40px;
+                        }
+                        }
+                        ">
+                    </div>
                     <div class="cms-space"></div>
                 </div>
                 <div id="cms-heading-5" class="cms-heading layout2   ">
@@ -943,68 +943,69 @@ Milestones" style=""></div>
                     </div>
                 </div>
                 <div class="cms-inline-css" style="display:none" data-css="    #cms-heading-5.layout2 .title-underline:after {
- background-color: #ffffff!important;
- }
- "></div>
+                    background-color: #ffffff!important;
+                    }
+                    ">
+                </div>
             </div>
         </div>
     </div>
 
     <style>
-   /* * {
-  box-sizing: border-box;
-}
+        /* * {
+        box-sizing: border-box;
+        }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-} */
+        body {
+        font-family: Arial, Helvetica, sans-serif;
+        } */
 
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 33.3%;
-  padding: 0 5px;
-  margin-bottom:1em;
-}
+        /* Float four columns side by side */
+        .column {
+        float: left;
+        width: 33.3%;
+        padding: 0 5px;
+        margin-bottom:1em;
+        }
 
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
+        /* Remove extra left and right margins, due to padding */
+        .row {margin: 0 -5px;}
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
 
-.row.tree {
-    margin: 2em !important;
-}
+        .row.tree {
+            margin: 2em !important;
+        }
 
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
+        /* Responsive columns */
+        @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+        }
+        }
 
-.object-project {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    /* border-radius:5px; */
-}
+        .object-project {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            /* border-radius:5px; */
+        }
 
-/* Style the counter cards */
-.card-project {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  
-  /* padding: 10px; */
-  min-height: 20vw;
-  text-align: center;
-  /* background-color: #f1f1f1; */
-}
+        /* Style the counter cards */
+        .card-project {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        
+        /* padding: 10px; */
+        min-height: 20vw;
+        text-align: center;
+        /* background-color: #f1f1f1; */
+        }
     </style>
 
 
@@ -1094,10 +1095,11 @@ body {
                     </div>
                 </div>
                 <div class="cms-inline-css" style="display:none" data-css="#cms-case-studies-carousel .nav-tabs .filter-item.active,#cms-case-studies-carousel .nav-tabs .filter-item:hover {
- color: #ffffff!important;
- }#cms-case-studies-carousel .nav-tabs .filter-item:after {
- background-color: #ffffff!important;
- }"></div>
+                    color: #ffffff!important;
+                    }#cms-case-studies-carousel .nav-tabs .filter-item:after {
+                    background-color: #ffffff!important;
+                    }">
+                </div>
             </div>
         </div>
     </div>
@@ -1110,26 +1112,27 @@ body {
             <div class="wpb_wrapper">
                 <div id="cms-space-6367027265c4b">
                     <div class="cms-inline-css" style="display:none" data-css="    @media screen and (min-width: 992px) {
- #cms-space-6367027265c4b .cms-space {
- height: 295px;
- }
- }
- @media (min-width: 768px) and (max-width: 991px) {
- #cms-space-6367027265c4b .cms-space {
- height: 276px;
- }
- }
- @media (min-width: 576px) and (max-width: 767px) {
- #cms-space-6367027265c4b .cms-space {
- height: 276px;
- }
- }
- @media screen and (max-width: 575px) {
- #cms-space-6367027265c4b .cms-space {
- height: 276px;
- }
- }
- "></div>
+                        #cms-space-6367027265c4b .cms-space {
+                        height: 295px;
+                        }
+                        }
+                        @media (min-width: 768px) and (max-width: 991px) {
+                        #cms-space-6367027265c4b .cms-space {
+                        height: 276px;
+                        }
+                        }
+                        @media (min-width: 576px) and (max-width: 767px) {
+                        #cms-space-6367027265c4b .cms-space {
+                        height: 276px;
+                        }
+                        }
+                        @media screen and (max-width: 575px) {
+                        #cms-space-6367027265c4b .cms-space {
+                        height: 276px;
+                        }
+                        }
+                        ">
+                    </div>
                     <div class="cms-space"></div>
                 </div>
                 <div class="cms-testimonial-title align-center">
@@ -1204,26 +1207,27 @@ body {
                 </div>
                 <div id="cms-space-6367027266d00">
                     <div class="cms-inline-css" style="display:none" data-css="    @media screen and (min-width: 992px) {
- #cms-space-6367027266d00 .cms-space {
- height: 168px;
- }
- }
- @media (min-width: 768px) and (max-width: 991px) {
- #cms-space-6367027266d00 .cms-space {
- height: 168px;
- }
- }
- @media (min-width: 576px) and (max-width: 767px) {
- #cms-space-6367027266d00 .cms-space {
- height: 168px;
- }
- }
- @media screen and (max-width: 575px) {
- #cms-space-6367027266d00 .cms-space {
- height: 168px;
- }
- }
- "></div>
+                        #cms-space-6367027266d00 .cms-space {
+                        height: 168px;
+                        }
+                        }
+                        @media (min-width: 768px) and (max-width: 991px) {
+                        #cms-space-6367027266d00 .cms-space {
+                        height: 168px;
+                        }
+                        }
+                        @media (min-width: 576px) and (max-width: 767px) {
+                        #cms-space-6367027266d00 .cms-space {
+                        height: 168px;
+                        }
+                        }
+                        @media screen and (max-width: 575px) {
+                        #cms-space-6367027266d00 .cms-space {
+                        height: 168px;
+                        }
+                        }
+                        ">
+                    </div>
                     <div class="cms-space"></div>
                 </div>
             </div>
@@ -1237,26 +1241,27 @@ body {
             <div class="wpb_wrapper">
                 <div id="cms-space-63670272672a0">
                     <div class="cms-inline-css" style="display:none" data-css="    @media screen and (min-width: 992px) {
- #cms-space-63670272672a0 .cms-space {
- height: 90px;
- }
- }
- @media (min-width: 768px) and (max-width: 991px) {
- #cms-space-63670272672a0 .cms-space {
- height: 40px;
- }
- }
- @media (min-width: 576px) and (max-width: 767px) {
- #cms-space-63670272672a0 .cms-space {
- height: 40px;
- }
- }
- @media screen and (max-width: 575px) {
- #cms-space-63670272672a0 .cms-space {
- height: 40px;
- }
- }
- "></div>
+                        #cms-space-63670272672a0 .cms-space {
+                        height: 90px;
+                        }
+                        }
+                        @media (min-width: 768px) and (max-width: 991px) {
+                        #cms-space-63670272672a0 .cms-space {
+                        height: 40px;
+                        }
+                        }
+                        @media (min-width: 576px) and (max-width: 767px) {
+                        #cms-space-63670272672a0 .cms-space {
+                        height: 40px;
+                        }
+                        }
+                        @media screen and (max-width: 575px) {
+                        #cms-space-63670272672a0 .cms-space {
+                        height: 40px;
+                        }
+                        }
+                        ">
+                    </div>
                     <div class="cms-space"></div>
                 </div>
                 <div id="cms-heading-6" class="cms-heading layout2   ">
@@ -1274,31 +1279,33 @@ body {
                     </div>
                 </div>
                 <div class="cms-inline-css" style="display:none" data-css="    #cms-heading-6.layout2 .title-underline:after {
- background-color: #ff5e14!important;
- }
- "></div>
+                    background-color: #ff5e14!important;
+                    }
+                    ">
+                </div>
                 <div id="cms-space-63670272677dd">
                     <div class="cms-inline-css" style="display:none" data-css="    @media screen and (min-width: 992px) {
- #cms-space-63670272677dd .cms-space {
- height: 26px;
- }
- }
- @media (min-width: 768px) and (max-width: 991px) {
- #cms-space-63670272677dd .cms-space {
- height: 26px;
- }
- }
- @media (min-width: 576px) and (max-width: 767px) {
- #cms-space-63670272677dd .cms-space {
- height: 26px;
- }
- }
- @media screen and (max-width: 575px) {
- #cms-space-63670272677dd .cms-space {
- height: 26px;
- }
- }
- "></div>
+                        #cms-space-63670272677dd .cms-space {
+                        height: 26px;
+                        }
+                        }
+                        @media (min-width: 768px) and (max-width: 991px) {
+                        #cms-space-63670272677dd .cms-space {
+                        height: 26px;
+                        }
+                        }
+                        @media (min-width: 576px) and (max-width: 767px) {
+                        #cms-space-63670272677dd .cms-space {
+                        height: 26px;
+                        }
+                        }
+                        @media screen and (max-width: 575px) {
+                        #cms-space-63670272677dd .cms-space {
+                        height: 26px;
+                        }
+                        }
+                        ">
+                    </div>
                     <div class="cms-space"></div>
                 </div>
                 <div id="cms-grid-blog" class="cms-grid cms-grid-blog layout1 cms-grid-layout-modern  ">
@@ -1368,34 +1375,36 @@ body {
                     </div>
                 </div>
                 <div class="cms-inline-css" style="display:none" data-css="#cms-grid-blog .cms-grid-inner {
- margin: 0 -15px;
- }
-#cms-grid-blog .cms-grid-inner .grid-item, #cms-grid-blog .cms-grid-inner .grid-sizer {
- padding: 15px !important;
- }
-"></div>
+                    margin: 0 -15px;
+                    }
+                    #cms-grid-blog .cms-grid-inner .grid-item, #cms-grid-blog .cms-grid-inner .grid-sizer {
+                    padding: 15px !important;
+                    }
+                    ">
+                </div>
                 <div id="cms-space-6367027269573">
                     <div class="cms-inline-css" style="display:none" data-css="    @media screen and (min-width: 992px) {
- #cms-space-6367027269573 .cms-space {
- height: 57px;
- }
- }
- @media (min-width: 768px) and (max-width: 991px) {
- #cms-space-6367027269573 .cms-space {
- height: 57px;
- }
- }
- @media (min-width: 576px) and (max-width: 767px) {
- #cms-space-6367027269573 .cms-space {
- height: 57px;
- }
- }
- @media screen and (max-width: 575px) {
- #cms-space-6367027269573 .cms-space {
- height: 57px;
- }
- }
- "></div>
+                        #cms-space-6367027269573 .cms-space {
+                        height: 57px;
+                        }
+                        }
+                        @media (min-width: 768px) and (max-width: 991px) {
+                        #cms-space-6367027269573 .cms-space {
+                        height: 57px;
+                        }
+                        }
+                        @media (min-width: 576px) and (max-width: 767px) {
+                        #cms-space-6367027269573 .cms-space {
+                        height: 57px;
+                        }
+                        }
+                        @media screen and (max-width: 575px) {
+                        #cms-space-6367027269573 .cms-space {
+                        height: 57px;
+                        }
+                        }
+                        ">
+                    </div>
                     <div class="cms-space"></div>
                 </div>
             </div>
