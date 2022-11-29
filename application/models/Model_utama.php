@@ -13,17 +13,17 @@ class Model_utama extends CI_model{
     }
 
     function kategori($dari, $jumlah){
-        return $this->db->query("SELECT * FROM kategori where aktif='Y' ORDER BY id_kategori ASC LIMIT $dari, $jumlah");
+        return $this->db->query("SELECT id_kategori, nama_kategori, kategori_seo, aktif FROM kategori where aktif='Y' ORDER BY id_kategori ASC LIMIT $dari, $jumlah");
     }
 
     function kategoriartikel(){
-        return $this->db->query("SELECT * FROM kategori where aktif='Y'");
+        return $this->db->query("SELECT id_kategori, nama_kategori, kategori_seo, aktif FROM kategori where aktif='Y'");
     }
 
     function subkategoriartikel($ids){
         // $angker = $this->db->query("SELECT * FROM berita WHERE id_kategori = $ids")->result_array();
         // var_dump($angker);die();
-        return $this->db->query("SELECT * FROM berita WHERE id_kategori = $ids");
+        return $this->db->query("SELECT id_berita, id_kategori, username, judul, judul_seo, headline, isi_berita, hari, tanggal, jam, gambar, dibaca, tag FROM berita WHERE id_kategori = $ids");
         
     
     }
@@ -38,16 +38,16 @@ class Model_utama extends CI_model{
 
     function sekilasinfo(){
         // return $this->db->query("SELECT * FROM sekilasinfo ORDER BY id_sekilas DESC LIMIT 5");
-        return $this->db->query("SELECT * FROM sekilasinfo WHERE aktif = 'Y' ORDER BY urutan");
+        return $this->db->query("SELECT id_sekilas, info, isi, tgl_posting, gambar, aktif, urutan FROM sekilasinfo WHERE aktif = 'Y' ORDER BY urutan");
     }
 
     function homepage($nomorlayout){
         // return $this->db->query("SELECT * FROM sekilasinfo ORDER BY id_sekilas DESC LIMIT 5");
-        return $this->db->query("SELECT * FROM sekilasinfo WHERE aktif = 'Y' AND urutan = $nomorlayout ORDER BY urutan");
+        return $this->db->query("SELECT id_sekilas, info, isi, tgl_posting, gambar, aktif, urutan FROM sekilasinfo WHERE aktif = 'Y' AND urutan = $nomorlayout ORDER BY urutan");
     }
 
     function visimisi() {
-        return $this->db->query("SELECT * FROM halamanstatis WHERE 
+        return $this->db->query("SELECT id_halaman, judul, isi_halaman, tgl_posting, gambar, id_main FROM halamanstatis WHERE 
         id_main=3");
     }
 
@@ -66,19 +66,19 @@ class Model_utama extends CI_model{
     }
 
     function mainmenu(){
-        return $this->db->query("SELECT * FROM mainmenu where aktif='Y' ORDER BY id_main ASC");
+        return $this->db->query("SELECT id_main, nama_menu, link, aktif, adminmenu FROM mainmenu where aktif='Y' ORDER BY id_main ASC");
     }
 
     function submenu($id){
-        return $this->db->query("SELECT * FROM submenu WHERE id_main='$id' AND aktif='Y' ORDER BY id_sub ASC");
+        return $this->db->query("SELECT id_sub, nama_sub, link_sub, id_main, id_submain, aktif, adminsubmenu FROM submenu WHERE id_main='$id' AND aktif='Y' ORDER BY id_sub ASC");
     }
 
     function submenu1($id){
-        return $this->db->query("SELECT * FROM submenu WHERE id_submain='$id' AND id_submain!='0' AND aktif='Y' ORDER BY id_sub ASC");
+        return $this->db->query("SELECT id_sub, nama_sub, link_sub, id_main, id_submain, aktif, adminsubmenu FROM submenu WHERE id_submain='$id' AND id_submain!='0' AND aktif='Y' ORDER BY id_sub ASC");
     }
 
     function pengumuman($dari, $jumlah){
-        return $this->db->query("SELECT * FROM sekilasinfo ORDER BY id_sekilas DESC LIMIT $dari, $jumlah");
+        return $this->db->query("SELECT id_sekilas, info, isi, tgl_posting, gambar, aktif, urutan FROM sekilasinfo ORDER BY id_sekilas DESC LIMIT $dari, $jumlah");
     }
 
     function linkterkait($posisi, $dari, $jumlah){
@@ -86,14 +86,14 @@ class Model_utama extends CI_model{
     }
 
     function banner($dari, $jumlah){
-        return $this->db->query("SELECT * FROM banner ORDER BY id_banner DESC LIMIT $dari, $jumlah");
+        return $this->db->query("SELECT id_banner, judul, url, gambar, tgl_posting FROM banner ORDER BY id_banner DESC LIMIT $dari, $jumlah");
     }
 
     function kunjungan(){
         $ip      = $_SERVER['REMOTE_ADDR'];
         $tanggal = date("Y-m-d");
         $waktu   = time(); 
-        $cekk = $this->db->query("SELECT * FROM statistik WHERE ip='$ip' AND tanggal='$tanggal'");
+        $cekk = $this->db->query("SELECT ip, tanggal, hits, online FROM statistik WHERE ip='$ip' AND tanggal='$tanggal'");
         $rowh = $cekk->row_array();
         if($cekk->num_rows() == 0){
             $datadb = array('ip'=>$ip, 'tanggal'=>$tanggal, 'hits'=>'1', 'online'=>$waktu);
@@ -112,7 +112,7 @@ class Model_utama extends CI_model{
     }
 
     function pengunjung(){
-        return $this->db->query("SELECT * FROM statistik WHERE tanggal='".date("Y-m-d")."' GROUP BY ip");
+        return $this->db->query("SELECT ip, tanggal, hits, online FROM statistik WHERE tanggal='".date("Y-m-d")."' GROUP BY ip");
     }
 
     function totalpengunjung(){
@@ -133,15 +133,15 @@ class Model_utama extends CI_model{
     }
 
     function cek_poling(){
-        return $this->db->query("SELECT * from modul where nama_modul='Poling' and publish='Y'");
+        return $this->db->query("SELECT id_modul, nama_modul, link, static_content, gambar, publish, status, aktif, urutan, link_seo from modul where nama_modul='Poling' and publish='Y'");
     }
 
     function pertanyaan(){
-        return $this->db->query("SELECT * FROM poling WHERE aktif='Y' and status='Pertanyaan'");
+        return $this->db->query("SELECT id_poling, pilihan, status, rating, aktif FROM poling WHERE aktif='Y' and status='Pertanyaan'");
     }
 
     function jawaban(){
-        return $this->db->query("SELECT * FROM poling WHERE aktif='Y' and status='Jawaban'");
+        return $this->db->query("SELECT id_poling, pilihan, status, rating, aktif FROM poling WHERE aktif='Y' and status='Jawaban'");
     }
 
     function semua_berita($start, $limit){
@@ -153,7 +153,7 @@ class Model_utama extends CI_model{
     }
 
     function hitungberita(){
-        return $this->db->query("SELECT * FROM berita");
+        return $this->db->query("SELECT id_berita, id_kategori, username, judul, judul_seo, headline, isi_berita, hari, tanggal, jam, gambar, dibaca, tag FROM berita");
     }
 
     function semua_berita_cari($start, $limit, $kata){
@@ -161,7 +161,7 @@ class Model_utama extends CI_model{
         $jml_katakan = (integer)count($pisah_kata);
         $jml_kata = $jml_katakan-1;
 
-        $cari = "SELECT * FROM berita WHERE " ;
+        $cari = "SELECT id_berita, id_kategori, username, judul, judul_seo, headline, isi_berita, hari, tanggal, jam, gambar, dibaca, tag FROM berita WHERE " ;
             for ($i=0; $i<=$jml_kata; $i++){
               $cari .= "judul OR isi_berita LIKE '%$pisah_kata[$i]%'";
               if ($i < $jml_kata ){
@@ -177,7 +177,7 @@ class Model_utama extends CI_model{
         $jml_katakan = (integer)count($pisah_kata);
         $jml_kata = $jml_katakan-1;
 
-        $cari = "SELECT * FROM layanan WHERE " ;
+        $cari = "SELECT id_layanan, id_kategori, username, judul, judul_seo, headline, isi_layanan, hari, tanggal, jam, gambar, dibaca, tag FROM layanan WHERE " ;
             for ($i=0; $i<=$jml_kata; $i++){
               $cari .= "judul OR isi_layanan LIKE '%$pisah_kata[$i]%'";
               if ($i < $jml_kata ){
@@ -205,18 +205,18 @@ class Model_utama extends CI_model{
     }
 
     function detail_kategori($id,$dari,$sampai){
-        return $this->db->query("SELECT * FROM berita where id_kategori='".$this->db->escape_str($id)."' ORDER BY id_berita DESC LIMIT $dari,$sampai");
+        return $this->db->query("SELECT id_berita, id_kategori, username, judul, judul_seo, headline, isi_berita, hari, tanggal, jam, gambar, dibaca, tag FROM berita where id_kategori='".$this->db->escape_str($id)."' ORDER BY id_berita DESC LIMIT $dari,$sampai");
     }
 
     function detail_kategori_layanan($id,$dari,$sampai){
-        return $this->db->query("SELECT * FROM layanan where id_kategori='".$this->db->escape_str($id)."' ORDER BY id_layanan DESC LIMIT $dari,$sampai");
+        return $this->db->query("SELECT id_layanan, id_kategori, username, judul, judul_seo, headline, isi_layanan, hari, tanggal, jam, gambar, dibaca, tag FROM layanan where id_kategori='".$this->db->escape_str($id)."' ORDER BY id_layanan DESC LIMIT $dari,$sampai");
     }
 
     function info_terkait($limit,$tag){
         $pisah_kata  = explode(",",$tag);
         $jml_katakan = (integer)count($pisah_kata);
         $jml_kata = $jml_katakan-1; 
-        $cari = "SELECT * FROM berita WHERE " ;
+        $cari = "SELECT id_berita, id_kategori, username, judul, judul_seo, headline, isi_berita, hari, tanggal, jam, gambar, dibaca, tag FROM berita WHERE " ;
                 for ($i=0; $i<=$jml_kata; $i++){
                   $cari .= "tag LIKE '%$pisah_kata[$i]%'";
                   if ($i < $jml_kata ){
@@ -228,15 +228,15 @@ class Model_utama extends CI_model{
     }
 
     function hitungberitakategori($kat){
-        return $this->db->query("SELECT * FROM berita where id_kategori='".$this->db->escape_str($kat)."'");
+        return $this->db->query("SELECT id_berita, id_kategori, username, judul, judul_seo, headline, isi_berita, hari, tanggal, jam, gambar, dibaca, tag FROM berita where id_kategori='".$this->db->escape_str($kat)."'");
     }
     
     function hitunglayanankategori($kat){
-        return $this->db->query("SELECT * FROM layanan where id_kategori='".$this->db->escape_str($kat)."'");
+        return $this->db->query("SELECT id_layanan, id_kategori, username, judul, judul_seo, headline, isi_layanan, hari, tanggal, jam, gambar, dibaca, tag FROM layanan where id_kategori='".$this->db->escape_str($kat)."'");
     }
 
     function page_detail($id){
-        return $this->db->query("SELECT * FROM halamanstatis where lower(replace(judul,' ','-'))='".$this->db->escape_str($id)."'");
+        return $this->db->query("SELECT id_halaman, judul, isi_halaman, tgl_posting, gambar, id_main FROM halamanstatis where lower(replace(judul,' ','-'))='".$this->db->escape_str($id)."'");
     }
 
     function page_detailcontent($id){
@@ -249,7 +249,7 @@ class Model_utama extends CI_model{
     }
 
     function hitungagenda(){
-        return $this->db->query("SELECT * FROM agenda");
+        return $this->db->query("SELECT id_agenda, tema, tema_seo, isi_agenda, tempat, pengirim, tgl_mulai, tgl_selesai, tgl_posting, jam, username FROM agenda");
     }
 
     function agenda_detail($id){
@@ -257,7 +257,7 @@ class Model_utama extends CI_model{
     }
 
     function index($start,$limit){
-        return $this->db->query("SELECT * FROM download ORDER BY id_download DESC LIMIT $start,$limit");
+        return $this->db->query("SELECT id_download, judul, nama_file, tgl_posting, hits FROM download ORDER BY id_download DESC LIMIT $start,$limit");
     }
 
     function updatehits($file){
@@ -265,23 +265,23 @@ class Model_utama extends CI_model{
     }
 
     function hitungdownload(){
-        return $this->db->query("SELECT * FROM download");
+        return $this->db->query("SELECT id_download, judul, nama_file, tgl_posting, hits FROM download");
     }
 
     function album($start, $limit){
-        return $this->db->query("SELECT * FROM album ORDER BY id_album DESC LIMIT $start, $limit");
+        return $this->db->query("SELECT id_album, jdl_album, album_seo, gbr_album, aktif FROM album ORDER BY id_album DESC LIMIT $start, $limit");
     }
 
     function hitungalbum(){
-        return $this->db->query("SELECT * FROM album");
+        return $this->db->query("SELECT id_album, jdl_album, album_seo, gbr_album, aktif FROM album");
     }
 
     function hitungfoto($album){
-        return $this->db->query("SELECT * FROM gallery where id_album='$album'");
+        return $this->db->query("SELECT id_gallery, id_album, jdl_gallery, gallery_seo, keterangan, gbr_gallery FROM gallery where id_album='$album'");
     }
 
     function gallery($id, $start, $limit){
-        return $this->db->query("SELECT * FROM gallery where id_album='$id' ORDER BY id_gallery DESC LIMIT $start, $limit");
+        return $this->db->query("SELECT id_gallery, id_album, jdl_gallery, gallery_seo, keterangan, gbr_gallery FROM gallery where id_album='$id' ORDER BY id_gallery DESC LIMIT $start, $limit");
     }
 
     function kirim_Pesan(){
@@ -306,6 +306,6 @@ class Model_utama extends CI_model{
     }
 
     function hasil_vote(){
-        return $this->db->query("SELECT * FROM poling WHERE aktif='Y' and status='Jawaban'");
+        return $this->db->query("SELECT id_poling, pilihan, status, rating, aktif FROM poling WHERE aktif='Y' and status='Jawaban'");
     }
 }
