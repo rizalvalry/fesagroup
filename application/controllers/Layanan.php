@@ -8,7 +8,7 @@ class Layanan extends CI_Controller {
 			$data['layanan'] = $this->model_utama->semua_layanan_cari(0,21,$keyword);
 		}else{
 			$data['title'] = 'Semua Layanan';
-			$jumlah= $this->model_utama->hitungberita()->num_rows();
+			$jumlah= $this->model_utama->hitunglayanankategori()->num_rows();
 			$config['base_url'] = base_url().'layanan/index';
 			$config['total_rows'] = $jumlah;
 			$config['per_page'] = 21; 	
@@ -37,8 +37,8 @@ class Layanan extends CI_Controller {
 	        	redirect('utama');
 	        }
 		$data['title'] = $row->judul;
-		$data['record'] = $this->model_utama->berita_detail($ids)->row_array();
-		$data['infoterkait'] = $this->model_utama->info_terkait(3,$row->tag);
+		$data['record'] = $this->model_utama->layanan_detail($ids)->row_array();
+		$data['infoterkait'] = $this->model_utama->info_terkait_layanan(3,$row->tag);
 		$this->model_utama->layanan_dibaca_update($ids);
 		$this->load->helper('captcha');
 		$vals = array(
@@ -61,7 +61,7 @@ class Layanan extends CI_Controller {
 
 	public function kategori(){
 		$ids = $this->uri->segment(3);
-		$dat = $this->db->query("SELECT * FROM kategori where kategori_seo='".$this->db->escape_str($ids)."'");
+		$dat = $this->db->query("SELECT * FROM kategori_layanan where kategori_seo='".$this->db->escape_str($ids)."'");
 	    $row = $dat->row();
 	    $total = $dat->num_rows();
 	        if ($total == 0){
@@ -84,7 +84,7 @@ class Layanan extends CI_Controller {
 			}
 		$this->pagination->initialize($config);
 		$data['title'] = $row->nama_kategori;
-		$this->template->load(template().'/template',template().'/view_kategori',$data);
+		$this->template->load(template().'/template',template().'/view_kategori_layanan',$data);
 	}
 
 	function kirim_komentar(){

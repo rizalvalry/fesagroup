@@ -1,7 +1,7 @@
 <?php 
 class Model_utama extends CI_model{
     function headline($dari, $jumlah){
-        return $this->db->query("SELECT a.*, b.nama_kategori FROM layanan a LEFT JOIN kategori_layanan b ON a.id_kategori=b.id_kategori where a.headline='Y' ORDER BY a.id_layanan ASC LIMIT $dari, $jumlah");
+        return $this->db->query("SELECT a.*, b.nama_kategori, kategori_seo FROM layanan a LEFT JOIN kategori_layanan b ON a.id_kategori=b.id_kategori where a.headline='Y' ORDER BY a.id_layanan ASC LIMIT $dari, $jumlah");
     }
 
     function headlinetwo($dari, $jumlah){
@@ -224,6 +224,21 @@ class Model_utama extends CI_model{
                   }
                 }
         $cari .= " ORDER BY id_berita DESC LIMIT $limit";
+        return $this->db->query($cari);
+    }
+
+    function info_terkait_layanan($limit,$tag){
+        $pisah_kata  = explode(",",$tag);
+        $jml_katakan = (integer)count($pisah_kata);
+        $jml_kata = $jml_katakan-1; 
+        $cari = "SELECT id_layanan, id_kategori, username, judul, judul_seo, headline, isi_layanan, hari, tanggal, jam, gambar, dibaca, tag FROM layanan WHERE " ;
+                for ($i=0; $i<=$jml_kata; $i++){
+                  $cari .= "tag LIKE '%$pisah_kata[$i]%'";
+                  if ($i < $jml_kata ){
+                    $cari .= " OR ";
+                  }
+                }
+        $cari .= " ORDER BY id_layanan DESC LIMIT $limit";
         return $this->db->query($cari);
     }
 
