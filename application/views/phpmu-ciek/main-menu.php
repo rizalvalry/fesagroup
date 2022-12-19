@@ -5,13 +5,13 @@
                         <div class="row">
                             <div class="col-lg-3 col-md-12 col-sm-12">
                                 <div class="header-main-inner">
-                                    <div class="site-branding clearfix"> <a class="logo-light" href="index.html"
+                                    <div class="site-branding clearfix"> <a class="logo-light" href="<?php echo base_url(); ?>"
                                             title="Logisti" rel="home"><img
                                                 src="<?php echo base_url(); ?>asset/logo-white.png"
                                                 alt="Logisti" /></a><a class="logo-dark" href="index.html"
                                             title="Logisti" rel="home"><img
                                                 src="<?php echo base_url(); ?>asset/logo.png"
-                                                alt="Logisti" /></a><a class="logo-mobile" href="index.html"
+                                                alt="Logisti" /></a><a class="logo-mobile" href="<?php echo base_url(); ?>"
                                             title="Logisti" rel="home"><img
                                                 src="<?php echo base_url(); ?>asset/logo.png"
                                                 alt="Logisti" /></a></div>
