@@ -81,7 +81,7 @@
                       <rs-layer id="slider-<?= $slider; ?>-slide-<?= $no; ?>-layer-<?= $layer; ?>"
                           class="rev-btn" data-type="button"
                           data-color="#222222"
-                          data-xy="x:l,c,c,c;xo:0,-90px,-90px,-50px;y:b;yo:0,1px,0,3px;"
+                          data-xy="x:l,c,c,c;xo:0,-0px,-0px,-50px;y:b;yo:0,1px,0,3px;"
                           data-text="s:14,14,14,13;l:17;fw:700;a:inherit;"
                           data-actions='o:click;a:simplelink;url:<?= base_url()."layanan/kategori/".$row['kategori_seo'] ?>;'
                           data-rsp_o="off" data-rsp_bd="off"
@@ -91,10 +91,10 @@
                           data-frame_999="o:0;tp:600;st:w;sR:6500;"
                           data-frame_hover="c:#fff;bgc:#ff5e14;boc:#000;bor:0px,0px,0px,0px;bos:solid;oX:50;oY:50;e:Power1.easeIn;"
                           style="z-index:9;background-color:#ffffff;font-family:Roboto;cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">
-                          Detail </rs-layer>
+                          Lebih Detail </rs-layer>
                       <!--
 -->
-                      <rs-layer
+                      <!-- <rs-layer
                           id="slider-<?= $slider; ?>-slide-<?= $no; ?>-layer-<?= $layer; ?>"
                           data-type="text"
                           data-xy="x:l,c,c,c;xo:203px,90px,90px,50px;y:b;yo:1px,1px,1px,-3px;"
@@ -121,7 +121,7 @@
                                           Video Kami!</p>
                                   </a></div>
                           </div>
-                      </rs-layer>
+                      </rs-layer> -->
                       <!--
 -->
                   </rs-group>
