@@ -138,7 +138,7 @@
         if ($this->uri->segment('1')!='' AND $this->uri->segment('1')!='utama'){
             // include "slide.php"; 
         ?>
-        <div id="pagetitle" style="background-image:url('<?php echo base_url(); ?>plugin/wp-content/uploads/2019/03/shutterstock_682632427.jpg');" class="page-title page-title-layout2 overlay-gradient absolute-header">
+        <div id="pagetitle" style="background-image:url('<?php echo base_url(); ?>asset/img_album/fesa-banner.jpg');" class="page-title page-title-layout2 overlay-gradient absolute-header">
                 <div class="container">
                     <div class="page-title-inner">
                         <ul class="cms-breadcrumb">
