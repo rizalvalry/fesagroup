@@ -1183,7 +1183,7 @@ Milestones" style=""></div>
                         </div>
                     </div>
                 </div>
-                <div class="slider-nav">
+                <!-- <div class="slider-nav">
                     <div class="thumbs">
                         <div class="thumb"> <img src="plugin/wp-content/uploads/2019/03/avatar2.jpg" alt="Sami Wade" />
                             <p class="name" style="color:#282828;">Sami Wade</p>
@@ -1204,7 +1204,7 @@ Milestones" style=""></div>
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div id="cms-space-6367027266d00">
                     <div class="cms-inline-css" style="display:none" data-css="    @media screen and (min-width: 992px) {
                         #cms-space-6367027266d00 .cms-space {
