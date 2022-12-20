@@ -304,8 +304,8 @@
                                                             <div class="title-heading">
                                                                 <h3 class="heading-tag"
                                                                     style="color:#222222;font-size:17px;line-height:26px;font-weight:600; ">
-                                                                    Sign up for industry alerts,<br /> news and insights
-                                                                    from Logisti.</h3>
+                                                                    Dapatkan informasi menarik,<br /> penawaran kerjasama,
+berita dan wawasan dari Logistik.</h3>
                                                             </div>
                                                         </div>
                                                     </div>
