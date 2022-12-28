@@ -876,7 +876,7 @@ Milestones" style=""></div>
                     data-arrows=false data-bullets=false data-stagepadding=0 data-rtl=false>
                     <!-- loop here -->
                 <?php 
-                $banner = $this->model_utama->banner(0, 6); 
+                $banner = $this->model_utama->banner(); 
                 foreach ($banner->result_array() as $rows){ 
                  ?>
                     <div class="cms-partner-item "> 

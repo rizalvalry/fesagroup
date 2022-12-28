@@ -85,8 +85,8 @@ class Model_utama extends CI_model{
         return $this->db->query("SELECT * FROM link_terkait where posisi='$posisi' ORDER BY id_link_terkait ASC LIMIT $dari, $jumlah");
     }
 
-    function banner($dari, $jumlah){
-        return $this->db->query("SELECT id_banner, judul, url, gambar, tgl_posting FROM banner ORDER BY id_banner DESC LIMIT $dari, $jumlah");
+    function banner(){
+        return $this->db->query("SELECT id_banner, judul, url, gambar, tgl_posting FROM banner ORDER BY id_banner DESC");
     }
 
     function kunjungan(){
