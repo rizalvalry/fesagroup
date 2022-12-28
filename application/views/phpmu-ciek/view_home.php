@@ -1041,7 +1041,7 @@ Milestones" style=""></div>
         <div class="tab-pane fade '.$ids.'" role="tabpanel">
         ';
         }
-        $product_query = $this->db->query("SELECT * FROM gallery WHERE id_album = $ids LIMIT 4");
+        $product_query = $this->db->query("SELECT * FROM gallery WHERE id_album = $ids LIMIT 6");
         $tab_content .= '<div class="row tree">';
         foreach($product_query->result_array() as $sub_row )
         {

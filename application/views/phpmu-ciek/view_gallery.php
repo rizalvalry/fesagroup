@@ -24,7 +24,7 @@
                   <div class="grid-item col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 '.$ids.'">
                   ';
           }
-          $product_query = $this->db->query("SELECT * FROM gallery WHERE id_album = $ids LIMIT 4");
+          $product_query = $this->db->query("SELECT * FROM gallery WHERE id_album = $ids");
           foreach($product_query->result_array() as $sub_row )
           {
           $isi_layanan = strip_tags($sub_row['jdl_gallery']); 
