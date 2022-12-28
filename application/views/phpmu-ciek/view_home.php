@@ -1055,7 +1055,7 @@ Milestones" style=""></div>
             <div class="card-project">
                 <img class="object-project" src="asset/img_galeri/'.$sub_row['gbr_gallery'].'" alt="Avatar" style="width:100%; height:200px;">
                 <div class="container">
-                <p class="cms-fancybox-title" style="margin-top:1vw; color:#ff5e158f;"><b>'.$sub_row['jdl_gallery'].'</b></p> 
+                <p class="cms-fancybox-title" style="margin-top:1vw; color:black;"><b>'.$sub_row['jdl_gallery'].'</b></p> 
                 
                 </div>
             </div>
